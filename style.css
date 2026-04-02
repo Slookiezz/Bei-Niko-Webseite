@@ -443,8 +443,6 @@
     background: none;
     border: 1px solid rgba(196, 163, 90, 0.4);
     color: var(--gold);
-    font-size: 2.8rem;
-    line-height: 1;
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -454,8 +452,20 @@
     justify-content: center;
     flex-shrink: 0;
     transition: all 0.3s ease;
-    padding-bottom: 3px;
+    padding: 0;
   }
+  .book-nav::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--gold);
+    border-right: 2px solid var(--gold);
+    transition: border-color 0.3s;
+  }
+  .book-nav-prev::before { transform: rotate(-135deg); margin-right: -2px; }
+  .book-nav-next::before { transform: rotate(45deg); margin-left: -2px; }
+  .book-nav:hover:not(:disabled)::before { border-color: var(--gold); }
   .book-nav:hover:not(:disabled) {
     background: rgba(196, 163, 90, 0.12);
     border-color: var(--gold);
@@ -909,18 +919,39 @@
     .mobile-menu-btn { display: flex; }
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .about-image { aspect-ratio: 4/5; max-height: 450px; }
+    /* Book: wrapper becomes relative block so arrows can overlay */
+    .book-wrapper { display: block; position: relative; width: 100%; gap: 0; }
     .book-container { width: 100%; height: auto; perspective: none; }
+    /* Spreads stack pages vertically */
     .book-spread { position: static; display: none; flex-direction: column; box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
     .book-spread.active { display: flex; }
-    .book-spread.flip-out-forward, .book-spread.flip-in-forward,
-    .book-spread.flip-out-backward, .book-spread.flip-in-backward { display: flex; animation: none; }
+    /* Animation bug fix: hide outgoing instantly, fade incoming in */
+    .book-spread.flip-out-forward,
+    .book-spread.flip-out-backward { display: none; animation: none; }
+    .book-spread.flip-in-forward,
+    .book-spread.flip-in-backward { display: flex; animation: mobileFadeIn 0.3s ease forwards; }
+    @keyframes mobileFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    /* Page borders for stacked layout */
     .book-page-left { border-right: none; border-bottom: 4px solid var(--navy); border-radius: 3px 3px 0 0; box-shadow: none; }
     .book-page-right { border-left: none; border-radius: 0 0 3px 3px; box-shadow: none; }
-    .book-wrapper { flex-wrap: wrap; gap: 0; row-gap: 1.5rem; }
-    .book-container { order: 1; width: 100%; }
-    .book-nav { order: 2; width: 64px; height: 64px; font-size: 2.4rem; border-width: 1.5px; }
-    .book-nav-prev { margin-left: 1rem; margin-right: auto; }
-    .book-nav-next { margin-right: 1rem; margin-left: auto; }
+    /* Arrows overlaid at the seam between the two pages */
+    .book-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 56px;
+      height: 56px;
+      font-size: 2.4rem;
+      border-width: 1.5px;
+      background: rgba(26, 35, 50, 0.45);
+      backdrop-filter: blur(6px);
+      margin: 0;
+      order: unset;
+    }
+    .book-nav-prev { left: 4%; right: auto; margin: 0; }
+    .book-nav-next { right: 4%; left: auto; margin: 0; }
+    .book-nav:hover:not(:disabled) { transform: translateY(-50%) scale(1.08); }
     .ambience-gallery { grid-template-columns: repeat(3, 1fr); }
     .ambience-card:nth-child(1) { aspect-ratio: 1; }
     .reviews-container { grid-template-columns: 1fr; }
