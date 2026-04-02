@@ -418,7 +418,7 @@
     font-weight: 600;
   }
 
-  /* ===== MENU ===== */
+  /* ===== MENU / BOOK ===== */
   #speisekarte {
     background: var(--navy);
     color: var(--cream);
@@ -428,54 +428,196 @@
   #speisekarte .section-title { color: var(--cream); }
   #speisekarte .section-subtitle { color: rgba(245, 240, 232, 0.4); }
 
-  .menu-grid {
-    max-width: 1000px;
+  /* Book wrapper: centers book + arrows */
+  .book-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    max-width: 1100px;
   }
 
-  .menu-category {
-    padding: 2rem;
-    background: rgba(245, 240, 232, 0.025);
-    border: 1px solid rgba(196, 163, 90, 0.12);
-    border-radius: 2px;
-    transition: all 0.4s ease;
-  }
-
-  .menu-category:hover {
-    border-color: rgba(196, 163, 90, 0.35);
-    background: rgba(245, 240, 232, 0.05);
-  }
-
-  .menu-category h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
+  /* Navigation arrows */
+  .book-nav {
+    background: none;
+    border: 1px solid rgba(196, 163, 90, 0.4);
     color: var(--gold);
-    margin-bottom: 1.5rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    padding-bottom: 3px;
+  }
+  .book-nav:hover:not(:disabled) {
+    background: rgba(196, 163, 90, 0.12);
+    border-color: var(--gold);
+    transform: scale(1.08);
+  }
+  .book-nav:disabled {
+    opacity: 0.2;
+    cursor: default;
   }
 
-  .menu-item {
+  /* The book itself */
+  .book-container {
+    position: relative;
+    width: 820px;
+    height: 500px;
+    perspective: 2400px;
+    flex-shrink: 0;
+  }
+
+  /* Each two-page spread */
+  .book-spread {
+    position: absolute;
+    inset: 0;
+    display: none;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 6px 20px rgba(0,0,0,0.4);
+    transform-origin: center center;
+  }
+  .book-spread.active {
+    display: flex;
+  }
+
+  /* Flip animations — forward */
+  @keyframes flipOutForward {
+    0%   { transform: perspective(2400px) rotateY(0deg);   opacity: 1; }
+    100% { transform: perspective(2400px) rotateY(-18deg); opacity: 0; }
+  }
+  @keyframes flipInForward {
+    0%   { transform: perspective(2400px) rotateY(18deg);  opacity: 0; }
+    100% { transform: perspective(2400px) rotateY(0deg);   opacity: 1; }
+  }
+  /* Flip animations — backward */
+  @keyframes flipOutBackward {
+    0%   { transform: perspective(2400px) rotateY(0deg);   opacity: 1; }
+    100% { transform: perspective(2400px) rotateY(18deg);  opacity: 0; }
+  }
+  @keyframes flipInBackward {
+    0%   { transform: perspective(2400px) rotateY(-18deg); opacity: 0; }
+    100% { transform: perspective(2400px) rotateY(0deg);   opacity: 1; }
+  }
+
+  .book-spread.flip-out-forward  { display: flex; animation: flipOutForward  0.45s ease-in  forwards; }
+  .book-spread.flip-in-forward   { display: flex; animation: flipInForward   0.45s ease-out forwards; }
+  .book-spread.flip-out-backward { display: flex; animation: flipOutBackward 0.45s ease-in  forwards; }
+  .book-spread.flip-in-backward  { display: flex; animation: flipInBackward  0.45s ease-out forwards; }
+
+  /* Individual pages */
+  .book-page {
+    flex: 1;
+    background: #f8f2e8;
+    padding: 2.2rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .book-page-left {
+    border-radius: 3px 0 0 3px;
+    border-right: 3px solid var(--navy);
+    box-shadow: inset -6px 0 18px rgba(0,0,0,0.08);
+  }
+  .book-page-right {
+    border-radius: 0 3px 3px 0;
+    border-left: 3px solid var(--navy);
+    box-shadow: inset 6px 0 18px rgba(0,0,0,0.08);
+  }
+  /* Subtle page texture lines */
+  .book-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      transparent,
+      transparent 27px,
+      rgba(26,35,50,0.04) 28px
+    );
+    pointer-events: none;
+  }
+
+  .page-content {
+    flex: 1;
+  }
+
+  /* Ornament + category heading */
+  .page-ornament {
+    text-align: center;
+    color: var(--gold);
+    font-size: 1rem;
+    letter-spacing: 0.4em;
+    margin-bottom: 0.4rem;
+    opacity: 0.7;
+  }
+  .page-category {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.02em;
+  }
+  .page-divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 0 auto 1.3rem;
+  }
+
+  /* Menu items on the page */
+  .book-menu-item {
+    margin-bottom: 0.85rem;
+    border-bottom: 1px solid rgba(26,35,50,0.07);
+    padding-bottom: 0.65rem;
+  }
+  .book-menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .book-item-row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(245, 240, 232, 0.05);
+    gap: 0.5rem;
+  }
+  .book-item-name {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .book-item-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #8a6830;
+    white-space: nowrap;
+  }
+  .book-item-desc {
+    font-size: 0.72rem;
+    color: rgba(26,35,50,0.45);
+    font-style: italic;
+    margin: 0.1rem 0 0;
   }
 
-  .menu-item:last-child { border-bottom: none; }
-  .menu-item-name { font-size: 0.9rem; font-weight: 500; color: var(--cream); }
-  .menu-item-desc { font-size: 0.75rem; color: rgba(245, 240, 232, 0.35); font-style: italic; margin-top: 0.15rem; }
-
-  .menu-item-price {
+  /* Page number */
+  .page-number {
+    text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    color: var(--gold);
-    font-weight: 600;
-    white-space: nowrap;
-    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: rgba(26,35,50,0.35);
+    letter-spacing: 0.15em;
+    padding-top: 0.5rem;
   }
 
   .menu-note {
@@ -767,7 +909,18 @@
     .mobile-menu-btn { display: flex; }
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .about-image { aspect-ratio: 4/5; max-height: 450px; }
-    .menu-grid { grid-template-columns: 1fr; }
+    .book-container { width: 100%; height: auto; perspective: none; }
+    .book-spread { position: static; display: none; flex-direction: column; box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+    .book-spread.active { display: flex; }
+    .book-spread.flip-out-forward, .book-spread.flip-in-forward,
+    .book-spread.flip-out-backward, .book-spread.flip-in-backward { display: flex; animation: none; }
+    .book-page-left { border-right: none; border-bottom: 4px solid var(--navy); border-radius: 3px 3px 0 0; box-shadow: none; }
+    .book-page-right { border-left: none; border-radius: 0 0 3px 3px; box-shadow: none; }
+    .book-wrapper { flex-wrap: wrap; gap: 0; row-gap: 1.5rem; }
+    .book-container { order: 1; width: 100%; }
+    .book-nav { order: 2; width: 64px; height: 64px; font-size: 2.4rem; border-width: 1.5px; }
+    .book-nav-prev { margin-left: 1rem; margin-right: auto; }
+    .book-nav-next { margin-right: 1rem; margin-left: auto; }
     .ambience-gallery { grid-template-columns: repeat(3, 1fr); }
     .ambience-card:nth-child(1) { aspect-ratio: 1; }
     .reviews-container { grid-template-columns: 1fr; }

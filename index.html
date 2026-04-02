@@ -102,40 +102,194 @@
   <h2 class="section-title reveal">Unsere Speisekarte</h2>
   <p class="section-subtitle reveal">Traditionelle griechische Küche, frisch zubereitet mit Liebe und besten Zutaten</p>
 
-  <div class="menu-grid">
-    <div class="menu-category reveal">
-      
-      <h3>Vorspeisen</h3>
-      <div class="menu-item"><div><div class="menu-item-name">Tzatziki</div><div class="menu-item-desc">Joghurt mit Gurke und Knoblauch</div></div><div class="menu-item-price">4,90 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Dolmadakia</div><div class="menu-item-desc">Gefüllte Weinblätter mit Reis</div></div><div class="menu-item-price">5,90 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Feta Saganaki</div><div class="menu-item-desc">Überbackener Schafskäse</div></div><div class="menu-item-price">6,50 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Gemischte Vorspeisenplatte</div><div class="menu-item-desc">Für 2 Personen</div></div><div class="menu-item-price">14,90 €</div></div>
+  <div class="book-wrapper reveal">
+    <button class="book-nav book-nav-prev" id="bookPrev" aria-label="Vorherige Seite">&#8249;</button>
+
+    <div class="book-container" id="bookContainer">
+
+      <!-- Spread 1: Vorspeisen + Vom Grill -->
+      <div class="book-spread active" data-index="0">
+        <div class="book-page book-page-left">
+          <div class="page-content">
+            <div class="page-ornament">&#10022;</div>
+            <h3 class="page-category">Vorspeisen</h3>
+            <div class="page-divider"></div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Tzatziki</span><span class="book-item-price">4,90 €</span></div>
+              <p class="book-item-desc">Joghurt mit Gurke und Knoblauch</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Dolmadakia</span><span class="book-item-price">5,90 €</span></div>
+              <p class="book-item-desc">Gefüllte Weinblätter mit Reis</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Feta Saganaki</span><span class="book-item-price">6,50 €</span></div>
+              <p class="book-item-desc">Überbackener Schafskäse</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Taramosalata</span><span class="book-item-price">4,50 €</span></div>
+              <p class="book-item-desc">Fischrogencreme mit Zitrone</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Vorspeisenplatte</span><span class="book-item-price">14,90 €</span></div>
+              <p class="book-item-desc">Gemischte Auswahl für 2 Personen</p>
+            </div>
+          </div>
+          <div class="page-number">1</div>
+        </div>
+        <div class="book-page book-page-right">
+          <div class="page-content">
+            <div class="page-ornament">&#10022;</div>
+            <h3 class="page-category">Vom Grill</h3>
+            <div class="page-divider"></div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Gyros</span><span class="book-item-price">13,90 €</span></div>
+              <p class="book-item-desc">Mit Reis und Salat</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Souvlaki</span><span class="book-item-price">14,50 €</span></div>
+              <p class="book-item-desc">Fleischspieße vom Schwein</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Bifteki</span><span class="book-item-price">15,90 €</span></div>
+              <p class="book-item-desc">Gefüllte Frikadelle mit Schafskäse</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Lammkoteletts</span><span class="book-item-price">19,90 €</span></div>
+              <p class="book-item-desc">Zart gegrillt mit Kräutern</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Moussaka</span><span class="book-item-price">14,90 €</span></div>
+              <p class="book-item-desc">Überbackener Auflauf mit Hackfleisch</p>
+            </div>
+          </div>
+          <div class="page-number">2</div>
+        </div>
+      </div>
+
+      <!-- Spread 2: Fisch + Vegetarisch -->
+      <div class="book-spread" data-index="1">
+        <div class="book-page book-page-left">
+          <div class="page-content">
+            <div class="page-ornament">&#10022;</div>
+            <h3 class="page-category">Fisch &amp; Meer</h3>
+            <div class="page-divider"></div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Calamari</span><span class="book-item-price">12,90 €</span></div>
+              <p class="book-item-desc">Frittierte Tintenfischringe</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Garnelen Saganaki</span><span class="book-item-price">16,90 €</span></div>
+              <p class="book-item-desc">In Tomatensauce mit Feta</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Dorade</span><span class="book-item-price">18,90 €</span></div>
+              <p class="book-item-desc">Frisch vom Grill</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Lachs vom Grill</span><span class="book-item-price">17,90 €</span></div>
+              <p class="book-item-desc">Mit Kräuterbutter und Zitrone</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Oktopus gegrillt</span><span class="book-item-price">19,90 €</span></div>
+              <p class="book-item-desc">Mariniert mit Olivenöl und Kräutern</p>
+            </div>
+          </div>
+          <div class="page-number">3</div>
+        </div>
+        <div class="book-page book-page-right">
+          <div class="page-content">
+            <div class="page-ornament">&#10022;</div>
+            <h3 class="page-category">Vegetarisch</h3>
+            <div class="page-divider"></div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Gemüseplatte</span><span class="book-item-price">11,90 €</span></div>
+              <p class="book-item-desc">Saisonal gegrilltes Gemüse</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Spanakopita</span><span class="book-item-price">9,90 €</span></div>
+              <p class="book-item-desc">Spinat-Feta-Blätterteigpastete</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Gefüllte Paprika</span><span class="book-item-price">12,90 €</span></div>
+              <p class="book-item-desc">Mit Reis und Kräutern überbacken</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Halloumi vom Grill</span><span class="book-item-price">10,90 €</span></div>
+              <p class="book-item-desc">Mit Rucola und Tomaten</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Fasolakia</span><span class="book-item-price">8,90 €</span></div>
+              <p class="book-item-desc">Grüne Bohnen in Tomatensauce</p>
+            </div>
+          </div>
+          <div class="page-number">4</div>
+        </div>
+      </div>
+
+      <!-- Spread 3: Desserts + Getränke -->
+      <div class="book-spread" data-index="2">
+        <div class="book-page book-page-left">
+          <div class="page-content">
+            <div class="page-ornament">&#10022;</div>
+            <h3 class="page-category">Desserts</h3>
+            <div class="page-divider"></div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Baklava</span><span class="book-item-price">5,90 €</span></div>
+              <p class="book-item-desc">Traditionelles Blätterteiggebäck</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Griechischer Joghurt</span><span class="book-item-price">5,50 €</span></div>
+              <p class="book-item-desc">Mit Honig und Walnüssen</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Galaktoboureko</span><span class="book-item-price">6,50 €</span></div>
+              <p class="book-item-desc">Grießpudding im Blätterteig</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Loukoumades</span><span class="book-item-price">5,90 €</span></div>
+              <p class="book-item-desc">Griechische Donuts mit Honig</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Eiscreme</span><span class="book-item-price">4,90 €</span></div>
+              <p class="book-item-desc">3 Kugeln nach Wahl</p>
+            </div>
+          </div>
+          <div class="page-number">5</div>
+        </div>
+        <div class="book-page book-page-right">
+          <div class="page-content">
+            <div class="page-ornament">&#10022;</div>
+            <h3 class="page-category">Getränke</h3>
+            <div class="page-divider"></div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Ouzo</span><span class="book-item-price">3,50 €</span></div>
+              <p class="book-item-desc">Griechischer Anis-Schnaps</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Griechischer Wein</span><span class="book-item-price">5,90 €</span></div>
+              <p class="book-item-desc">Glas, Hausauswahl</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Flaschenbier</span><span class="book-item-price">3,90 €</span></div>
+              <p class="book-item-desc">Mythos oder Fix</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Griechischer Kaffee</span><span class="book-item-price">2,90 €</span></div>
+              <p class="book-item-desc">Frappé oder Ellinikos</p>
+            </div>
+            <div class="book-menu-item">
+              <div class="book-item-row"><span class="book-item-name">Wasser &amp; Softdrinks</span><span class="book-item-price">2,50 €</span></div>
+              <p class="book-item-desc">Still, Sprudelnd oder Cola / Fanta</p>
+            </div>
+          </div>
+          <div class="page-number">6</div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="menu-category reveal reveal-delay-1">
-      
-      <h3>Vom Grill</h3>
-      <div class="menu-item"><div><div class="menu-item-name">Gyros</div><div class="menu-item-desc">Mit Reis und Salat</div></div><div class="menu-item-price">13,90 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Souvlaki</div><div class="menu-item-desc">Fleischspieße vom Schwein</div></div><div class="menu-item-price">14,50 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Bifteki</div><div class="menu-item-desc">Gefüllte Frikadelle mit Schafskäse</div></div><div class="menu-item-price">15,90 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Lammkoteletts</div><div class="menu-item-desc">Zart gegrillt mit Kräutern</div></div><div class="menu-item-price">19,90 €</div></div>
-    </div>
-
-    <div class="menu-category reveal">
-      
-      <h3>Fisch & Meeresfrüchte</h3>
-      <div class="menu-item"><div><div class="menu-item-name">Calamari</div><div class="menu-item-desc">Frittierte Tintenfischringe</div></div><div class="menu-item-price">12,90 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Garnelen Saganaki</div><div class="menu-item-desc">In Tomatensauce mit Feta</div></div><div class="menu-item-price">16,90 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Dorade</div><div class="menu-item-desc">Frisch vom Grill</div></div><div class="menu-item-price">18,90 €</div></div>
-    </div>
-
-    <div class="menu-category reveal reveal-delay-1">
-      
-      <h3>Desserts</h3>
-      <div class="menu-item"><div><div class="menu-item-name">Baklava</div><div class="menu-item-desc">Traditionelles Blätterteiggebäck</div></div><div class="menu-item-price">5,90 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Griechischer Joghurt</div><div class="menu-item-desc">Mit Honig und Walnüssen</div></div><div class="menu-item-price">5,50 €</div></div>
-      <div class="menu-item"><div><div class="menu-item-name">Galaktoboureko</div><div class="menu-item-desc">Grießpudding im Blätterteig</div></div><div class="menu-item-price">6,50 €</div></div>
-    </div>
+    <button class="book-nav book-nav-next" id="bookNext" aria-label="Nächste Seite">&#8250;</button>
   </div>
 
   <p class="menu-note reveal">Die Preise sind beispielhaft. Bitte fragen Sie nach der aktuellen Speisekarte.</p>
