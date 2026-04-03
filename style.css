@@ -778,6 +778,7 @@
   .contact-item p { font-size: 0.9rem; line-height: 1.8; color: rgba(245, 240, 232, 0.65); }
   .contact-item a { color: var(--gold-light); text-decoration: none; transition: color 0.3s; }
   .contact-item a:hover { color: var(--gold); }
+  .contact-call-hint { margin-top: 0.5rem; font-size: 0.8rem !important; color: rgba(245, 240, 232, 0.4) !important; font-style: italic; }
 
   .hours-table { width: 100%; border-collapse: collapse; }
   .hours-table tr { border-bottom: 1px solid rgba(245, 240, 232, 0.07); }
