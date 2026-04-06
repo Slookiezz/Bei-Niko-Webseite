@@ -639,6 +639,148 @@
     font-size: 1.05rem;
   }
 
+  /* ===== MENU LAYOUT ===== */
+  .menu-sections {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .menu-sections.menu-loaded {
+    opacity: 1;
+  }
+
+  /* Inhaltsverzeichnis – Wrapper */
+  .menu-toc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Toggle-Button: zeigt aktive Kategorie + Pfeil */
+  .menu-toc-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(196, 163, 90, 0.08);
+    border: 1px solid rgba(196, 163, 90, 0.4);
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.9rem 1.4rem;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background 0.25s ease, border-color 0.25s ease;
+    letter-spacing: 0.04em;
+  }
+
+  .menu-toc-toggle:hover {
+    background: rgba(196, 163, 90, 0.14);
+    border-color: var(--gold);
+  }
+
+  .menu-toc-arrow {
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.35s ease;
+    color: var(--gold-light);
+  }
+
+  .menu-toc-toggle.open .menu-toc-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Aufklappbare Liste */
+  .menu-toc-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.35s ease;
+    padding: 0 0.2rem;
+  }
+
+  .menu-toc-list.open {
+    max-height: 700px;
+    padding: 0.8rem 0.2rem 0.2rem;
+  }
+
+  .menu-toc-btn {
+    background: transparent;
+    border: 1px solid rgba(196, 163, 90, 0.3);
+    color: rgba(245, 240, 232, 0.55);
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 0.4rem 0.95rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  .menu-toc-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+  }
+
+  .menu-toc-btn.active {
+    background: rgba(196, 163, 90, 0.15);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* Anzeige-Bereich – wirkt wie eine Buchseite */
+  .menu-display {
+    background: #f8f2e8;
+    border-radius: 3px;
+    padding: 2rem 2rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 16px 50px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.3);
+    transform-origin: center center;
+  }
+
+  /* Buchseiten-Linienmuster */
+  .menu-display::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      transparent,
+      transparent 27px,
+      rgba(26,35,50,0.04) 28px
+    );
+    pointer-events: none;
+  }
+
+  /* Umblätter-Animationen für .menu-display */
+  .menu-display.flip-out-forward  { animation: flipOutForward  0.35s ease-in  forwards; }
+  .menu-display.flip-in-forward   { animation: flipInForward   0.35s ease-out forwards; }
+  .menu-display.flip-out-backward { animation: flipOutBackward 0.35s ease-in  forwards; }
+  .menu-display.flip-in-backward  { animation: flipInBackward  0.35s ease-out forwards; }
+
+  .menu-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0 2.5rem;
+  }
+
+  .menu-allergen {
+    font-size: 0.65rem;
+    color: rgba(26,35,50,0.45);
+    margin-left: 0.15rem;
+    vertical-align: super;
+  }
+
   /* ===== AMBIENCE ===== */
   #ambiente { background: var(--cream); overflow: hidden; }
 
@@ -1086,6 +1228,11 @@
     nav.scrolled { padding: 0.6rem 1.5rem; }
     section { padding: 4rem 1.5rem; }
     .hero-logo { width: 120px; height: 120px; }
+    .menu-items-grid { grid-template-columns: 1fr; gap: 0; }
+    .menu-sections { gap: 1rem; }
+    .menu-display { padding: 1.5rem 1.1rem 1.2rem; }
+    .menu-toc-btn { font-size: 0.73rem; padding: 0.38rem 0.7rem; }
+    .menu-toc-toggle { font-size: 1.05rem; padding: 0.8rem 1.1rem; }
   }
 
   @media (max-width: 500px) {
