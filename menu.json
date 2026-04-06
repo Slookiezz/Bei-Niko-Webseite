@@ -474,18 +474,41 @@
     ]
   },
   {
-    "category": "Weine",
+    "category": "Rotweine",
     "items": [
-      {"title":"Lieblicher Landwein","description":"0,2 l oder 0,5 l","price":"5,50 € / 13,00 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Trockener Landwein","description":"0,2 l oder 0,5 l","price":"5,50 € / 13,00 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Mavrodafne Likörwein","description":"0,2 l oder 0,5 l","price":"7,90 € / 17,00 €","allergens":[]},
-      {"title":"Merlot","description":"0,2 l","price":"7,90 €","allergens":[]},
-      {"title":"Cabernet Sauvignon","description":"0,75 l","price":"27,90 €","allergens":[]},
-      {"title":"Imiglikos halbsüß","description":"0,2 l oder 0,5 l","price":"5,50 € / 13,00 €","allergens":[]},
-      {"title":"Retsina","description":"0,2 l oder 0,5 l","price":"5,50 € / 13,00 €","allergens":[]},
-      {"title":"Samos","description":"0,2 l oder 0,5 l","price":"7,50 € / 16,90 €","allergens":[]},
-      {"title":"Moschofilero","description":"0,75 l","price":"26,50 €","allergens":[]},
-      {"title":"Trockener Rosé","description":"0,2 l oder 0,5 l","price":"5,50 € / 13,00 €","allergens":[]}
+      {"title":"Lieblicher Landwein (0,2 l, 11%)","description":"lieblich","price":"5,50 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Lieblicher Landwein (0,5 l, 11%)","description":"lieblich","price":"13,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,2 l, 11%)","description":"trocken","price":"5,50 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,5 l, 11%)","description":"trocken","price":"13,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Mavrodafne Likörwein (0,2 l, 15%)","description":"Likörwein, süß","price":"7,90 €","allergens":[]},
+      {"title":"Mavrodafne Likörwein (0,5 l, 15%)","description":"Likörwein, süß","price":"17,00 €","allergens":[]},
+      {"title":"Merlot (0,2 l, 14%)","description":"rot, weich","price":"7,90 €","allergens":[]},
+      {"title":"Naoussa Boutari (0,2 l, 12,5%)","description":"kräftig, Barrique","price":"7,90 €","allergens":[]},
+      {"title":"Naoussa Boutari (0,75 l, 12,5%)","description":"kräftig","price":"25,50 €","allergens":[]},
+      {"title":"Cabernet Sauvignon (0,2 l, 14%)","description":"kräftig","price":"7,90 €","allergens":[]},
+      {"title":"Cabernet Sauvignon (0,75 l, 14%)","description":"kräftig","price":"27,90 €","allergens":[]}
+    ]
+  },
+  {
+    "category": "Weißweine",
+    "items": [
+      {"title":"Imiglikos halbsüß (0,2 l, 11%)","description":"halbsüß","price":"5,50 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Imiglikos halbsüß (0,5 l, 11%)","description":"halbsüß","price":"13,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,2 l, 11%)","description":"trocken","price":"5,50 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,5 l, 11%)","description":"trocken","price":"13,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Retsina (0,2 l, 10,5%)","description":"geharzt","price":"5,50 €","allergens":[]},
+      {"title":"Retsina (0,5 l, 10,5%)","description":"geharzt","price":"13,00 €","allergens":[]},
+      {"title":"Samos (0,2 l, 15%)","description":"süß","price":"7,50 €","allergens":[]},
+      {"title":"Samos (0,5 l, 15%)","description":"süß","price":"16,90 €","allergens":[]},
+      {"title":"Moschofilero (0,2 l, 11%)","description":"trocken, fruchtig","price":"7,50 €","allergens":[]},
+      {"title":"Moschofilero (0,75 l, 11%)","description":"fruchtig","price":"26,50 €","allergens":[]}
+    ]
+  },
+  {
+    "category": "Roséweine",
+    "items": [
+      {"title":"Trockener Rosé (0,2 l, 11,5%)","description":"trocken","price":"5,50 €","allergens":[]},
+      {"title":"Trockener Rosé (0,5 l, 11,5%)","description":"trocken","price":"13,00 €","allergens":[]}
     ]
   }
 ]
