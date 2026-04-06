@@ -1304,6 +1304,29 @@
     .menu-display { padding: 1.5rem 1.1rem 1.2rem; }
     .menu-toc-btn { font-size: 0.73rem; padding: 0.38rem 0.7rem; }
     .menu-toc-toggle { font-size: 1.05rem; padding: 0.8rem 1.1rem; }
+    /* TOC als Overlay – kein Layout-Shift beim Aufklappen */
+    .menu-toc {
+      position: relative;
+      z-index: 10;
+    }
+    .menu-toc-list {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      background: rgba(18, 28, 44, 0.97);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(196, 163, 90, 0.25);
+      border-top: none;
+      border-radius: 0 0 2px 2px;
+      padding: 0 0.6rem;
+      z-index: 20;
+      max-height: 0;
+    }
+    .menu-toc-list.open {
+      max-height: 500px;
+      padding: 0.7rem 0.6rem 0.6rem;
+    }
   }
 
   @media (max-width: 500px) {
