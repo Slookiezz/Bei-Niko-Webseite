@@ -123,6 +123,41 @@
     ]
   },
   {
+    "category": "Käse - Spezialitäten",
+    "items": [
+      {
+        "title": "Saganaki",
+        "description": "panierter Schafskäse",
+        "price": "9,50 €",
+        "allergens": ["ᴳ"]
+      },
+      {
+        "title": "Feta",
+        "description": "Schafskäse mit Zwiebeln und Öl",
+        "price": "8,50 €",
+        "allergens": ["ᴳ"]
+      },
+      {
+        "title": "Feta",
+        "description": "überbacken mit Zwiebeln und Öl",
+        "price": "9,90 €",
+        "allergens": ["ᴳ"]
+      },
+      {
+        "title": "Ktipiti",
+        "description": "pikante Schafskäsecreme mit Paprika",
+        "price": "7,90 €",
+        "allergens": ["¹", "ᴳ"]
+      },
+      {
+        "title": "Blätterteigtaschen",
+        "description": "mit Käse gefüllt, dazu Ktipiti",
+        "price": "8,90 €",
+        "allergens": ["¹", "ᴳ"]
+      }
+    ]
+  },
+  {
     "category": "Salate",
     "items": [
       {
@@ -286,7 +321,7 @@
         "title": "Spaghetti mit Metaxasauce",
         "description": "mit Käse überbacken, dazu Salat",
         "price": "13,90 €",
-        "allergens": ["¹","ᶜ","ᴴ"]
+        "allergens": ["¹","ᴳ","ᴴ"]
       },
       {
         "title": "1 Suflaki überbacken",

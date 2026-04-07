@@ -86,7 +86,24 @@ function openLegal(id) {
         tocList.appendChild(btn);
       });
 
-      toc.appendChild(tocToggle);
+      // Pfeil-Buttons links und rechts vom Toggle
+      var btnPrev = document.createElement('button');
+      btnPrev.className = 'menu-nav-btn menu-nav-prev';
+      btnPrev.setAttribute('aria-label', 'Vorherige Kategorie');
+      btnPrev.innerHTML = '&#8249;';
+
+      var btnNext = document.createElement('button');
+      btnNext.className = 'menu-nav-btn menu-nav-next';
+      btnNext.setAttribute('aria-label', 'Nächste Kategorie');
+      btnNext.innerHTML = '&#8250;';
+
+      var tocHeader = document.createElement('div');
+      tocHeader.className = 'menu-toc-header';
+      tocHeader.appendChild(btnPrev);
+      tocHeader.appendChild(tocToggle);
+      tocHeader.appendChild(btnNext);
+
+      toc.appendChild(tocHeader);
       toc.appendChild(tocList);
 
       // Anzeige-Bereich (wirkt wie Buchseite)
@@ -136,6 +153,7 @@ function openLegal(id) {
           setTimeout(function() {
             display.classList.remove(inClass);
             animating = false;
+            if (typeof updateNavButtons === 'function') updateNavButtons();
           }, 400);
         }, 320);
       }
@@ -146,6 +164,20 @@ function openLegal(id) {
         selectCategory(parseInt(btn.dataset.index));
       });
 
+      function updateNavButtons() {
+        btnPrev.disabled = activeIdx === 0;
+        btnNext.disabled = activeIdx === categories.length - 1;
+      }
+
+      btnPrev.addEventListener('click', function() {
+        selectCategory(activeIdx - 1);
+      });
+
+      btnNext.addEventListener('click', function() {
+        selectCategory(activeIdx + 1);
+      });
+
+      updateNavButtons();
       container.classList.add('menu-loaded');
     })
     .catch(function(err) {

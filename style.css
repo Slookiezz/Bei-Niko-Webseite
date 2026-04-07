@@ -738,6 +738,47 @@
     color: var(--gold);
   }
 
+  /* TOC Header: Pfeil-Buttons + Toggle in einer Reihe */
+  .menu-toc-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .menu-toc-header .menu-toc-toggle {
+    flex: 1;
+  }
+
+  .menu-nav-btn {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(196, 163, 90, 0.35);
+    background: rgba(196, 163, 90, 0.07);
+    color: var(--gold-light);
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s, border-color 0.25s, color 0.25s, opacity 0.2s;
+    padding: 0;
+    user-select: none;
+  }
+
+  .menu-nav-btn:hover:not(:disabled) {
+    background: rgba(196, 163, 90, 0.18);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .menu-nav-btn:disabled {
+    opacity: 0.2;
+    cursor: default;
+  }
+
   /* Anzeige-Bereich – wirkt wie eine Buchseite */
   .menu-display {
     background: #f8f2e8;
@@ -1302,6 +1343,7 @@
     .menu-items-grid { grid-template-columns: 1fr; gap: 0; }
     .menu-sections { gap: 1rem; }
     .menu-display { padding: 1.5rem 1.1rem 1.2rem; }
+    .menu-nav-btn { width: 36px; height: 36px; font-size: 1.5rem; }
     .menu-toc-btn { font-size: 0.73rem; padding: 0.38rem 0.7rem; }
     .menu-toc-toggle { font-size: 1.05rem; padding: 0.8rem 1.1rem; }
     /* TOC als Overlay – kein Layout-Shift beim Aufklappen */
