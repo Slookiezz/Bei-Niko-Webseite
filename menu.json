@@ -5,25 +5,25 @@
       {
         "title": "Appetitanreger (Querschnitt aus Vorspeisen)",
         "description": "N/A",
-        "price": "12,90 €",
+        "price": "13,90 €",
         "allergens": []
       },
       {
         "title": "Appetitanreger - Spezial (für 2 Personen)",
         "description": "N/A",
-        "price": "24,90 €",
+        "price": "26,50 €",
         "allergens": []
-      },
+      },    
       {
         "title": "Oliven - Peperoni",
         "description": "N/A",
-        "price": "5,50 €",
+        "price": "6,00 €",
         "allergens": ["⁶"]
       },
       {
         "title": "Zaziki",
         "description": "beliebteste Vorspeise",
-        "price": "5,70 €",
+        "price": "6,00 €",
         "allergens": ["ᴳ"]
       },
       {
@@ -35,19 +35,13 @@
       {
         "title": "Dolmadakia",
         "description": "Weinblätter mit Reis & Zaziki",
-        "price": "7,50 €",
+        "price": "7,90 €",
         "allergens": ["ᴳ"]
-      },
-      {
-        "title": "Meeresfrüchtesalat",
-        "description": "mit Tomaten, Essig & Öl",
-        "price": "10,90 €",
-        "allergens": []
       },
       {
         "title": "Creme Trilogie",
         "description": "Zaziki, Tarama, Käsecreme",
-        "price": "8,20 €",
+        "price": "9,50 €",
         "allergens": ["ᴳ"]
       }
     ]
@@ -58,43 +52,43 @@
       {
         "title": "Garnelen, paniert",
         "description": "N/A",
-        "price": "10,90 €",
+        "price": "11,00 €",
         "allergens": ["ᴮ"]
       },
       {
         "title": "Zucchini",
         "description": "gebraten mit Tomatenknoblauchsauce & Zaziki",
-        "price": "10,50 €",
+        "price": "11,00 €",
         "allergens": ["ᴮ","ᴰ","ᴳ"]
       },
       {
         "title": "Kalamari, gebraten",
         "description": "dazu Zaziki",
-        "price": "10,90 €",
+        "price": "12,00 €",
         "allergens": ["ᴰ","ᴳ"]
       },
       {
         "title": "Auberginen",
         "description": "mit Tomatenknoblauchsauce",
-        "price": "10,50 €",
+        "price": "11,00 €",
         "allergens": ["¹","ᴳ"]
       },
       {
         "title": "Auberginen mit Gehacktem",
         "description": "mit Käse überbacken",
-        "price": "11,50 €",
+        "price": "12,00 €",
         "allergens": ["¹","ᴳ"]
       },
       {
         "title": "Gefüllte Champignons",
         "description": "mit Speck, Bratensauce & Käse",
-        "price": "9,90 €",
+        "price": "10,90 €",
         "allergens": ["¹","ᴰ"]
       },
       {
         "title": "Peperoni",
         "description": "mit Knoblauch & Olivenöl gebraten",
-        "price": "6,50 €",
+        "price": "8,50 €",
         "allergens": []
       }
     ]
@@ -128,19 +122,19 @@
       {
         "title": "Saganaki",
         "description": "panierter Schafskäse",
-        "price": "9,50 €",
+        "price": "9,90 €",
         "allergens": ["ᴳ"]
       },
       {
         "title": "Feta",
         "description": "Schafskäse mit Zwiebeln und Öl",
-        "price": "8,50 €",
+        "price": "8,90 €",
         "allergens": ["ᴳ"]
       },
       {
         "title": "Feta",
         "description": "überbacken mit Zwiebeln und Öl",
-        "price": "9,90 €",
+        "price": "11,50 €",
         "allergens": ["ᴳ"]
       },
       {
@@ -161,33 +155,39 @@
     "category": "Salate",
     "items": [
       {
+        "title": "Zeus-Salat",
+        "description": "bunter Salat mit Ei und Gyros",
+        "price": "17,00 €",
+        "allergens": []
+      },
+      {
         "title": "Gemischter Salat",
         "description": "mit Sauce",
-        "price": "5,50 €",
+        "price": "5,90 €",
         "allergens": ["ᴳ","¹"]
       },
       {
         "title": "Großer Bauernsalat",
         "description": "mit grünem Salat, Tomaten, Gurken, Käse, Oliven, Peperoni, Zwiebeln und Paprika",
-        "price": "12,90 €",
+        "price": "13,50 €",
         "allergens": ["¹","⁶","ᴳ"]
       },
       {
         "title": "Thunfischsalat",
         "description": "mit grünem Salat, Krautsalat, Thunfisch, Tomaten, Gurken, Ei, Oliven und Peperoni",
-        "price": "14,50 €",
+        "price": "16,90 €",
         "allergens": ["ᶜ","ᴰ","⁶"]
       },
       {
         "title": "Chef-Salat",
         "description": "bunter Salat mit Ei und gegrillten Schweinesteakstreifen",
-        "price": "14,50 €",
+        "price": "16,90 €",
         "allergens": ["ᶜ"]
       },
       {
         "title": "Corfu-Salat",
         "description": "bunter Salat mit Ei und gegrillten Hähnchenbruststreifen",
-        "price": "14,50 €",
+        "price": "16,90 €",
         "allergens": ["ᶜ"]
       }
     ]
@@ -227,7 +227,7 @@
       {
         "title": "Gemüse überbacken",
         "description": "mit Sauce Hollandaise",
-        "price": "13,90 €",
+        "price": "14,50 €",
         "allergens": []
       },
       {
@@ -241,74 +241,67 @@
   {
     "category": "Gyros - Gerichte",
     "items": [
-      {"title":"Gyros mit Zaziki","description":"mit Pommes frites, Reis und Salat","price":"16,50 €","allergens":[]},
-      {"title":"Gyros überbacken mit Käse in Metaxasauce","description":"mit Kretanischen Kartoffeln und Salat","price":"19,90 €","allergens":["¹","²","ᶜ","ᴳ"]},
-      {"title":"Gyros mit Ofenkartoffel","description":"dazu Salat","price":"18,30 €","allergens":[]}
+      {"title":"Gyros mit Zaziki","description":"mit Pommes frites, Reis und Salat","price":"17,90 €","allergens":[]},
+      {"title":"Gyros überbacken mit Käse in Metaxasauce","description":"mit Kretanischen Kartoffeln und Salat","price":"21,90 €","allergens":["¹","²","ᶜ","ᴳ"]},
+      {"title":"Gyros mit Ofenkartoffel","description":"dazu Salat","price":"19,50 €","allergens":[]}
     ]
   },
   {
     "category": "Gerichte vom Grill",
     "items": [
-      {"title":"Suflaki","description":"2 Fleischspieße mit Pommes frites, Reis und Salat","price":"16,50 €","allergens":["⁴"]},
-      {"title":"Suzuki","description":"3 Mettröllchen mit Pommes frites, Reis und Salat","price":"16,00 €","allergens":["⁴"]},
-      {"title":"Bifteki","description":"Hackfleisch gefüllt mit Käse","price":"17,50 €","allergens":["¹","⁴","ᴳ"]},
-      {"title":"2 Schweinefilets mit Gyros","description":"mit Pommes frites, Reis und Salat","price":"20,90 €","allergens":["⁴"]},
-      {"title":"Thessaloniki-Teller","description":"Gyros, Bifteki mit Käse gefüllt, Zaziki, Pommes, Reis und Salat","price":"22,50 €","allergens":["¹","⁴","ᴳ"]},
-      {"title":"Bauernplatte","description":"Suflaki, Schweinesteak, Gyros, Pommes, Reis und Salat","price":"18,90 €","allergens":["⁴"]},
-      {"title":"Ouzo-Platte","description":"Suzuki, Suflaki, Gyros, Pommes, Reis und Salat","price":"18,90 €","allergens":["⁴"]},
-      {"title":"Helena-Teller","description":"Hähnchenbrustfilet mit Zaziki, Pommes, Reis und Salat","price":"17,50 €","allergens":["⁴","ᴳ"]},
-      {"title":"Grill-Teller","description":"Suflaki, Schweinesteak, Gyros, Suzuki, Pommes, Reis und Salat","price":"22,50 €","allergens":["⁴"]},
-      {"title":"Rinderleber gegrillt","description":"mit Röstzwiebeln, Pommes, Reis und Salat","price":"17,50 €","allergens":["⁴"]},
-      {"title":"Parga-Teller","description":"Suflaki, Gyros, Zaziki, Pommes, Reis und Salat","price":"17,50 €","allergens":["⁴","ᴳ"]},
-      {"title":"Kreta-Teller","description":"Gyros, Rinderleber, Zaziki, Pommes, Reis und Salat","price":"18,00 €","allergens":["⁴","ᴳ"]},
-      {"title":"Nikos-Teller","description":"2 Suzuki, Gyros, Pommes, Reis und Salat","price":"18,50 €","allergens":["⁴"]},
-      {"title":"Vierjahreszeiten-Teller","description":"Steak, Gyros, Suzuki, Pommes, Reis und Salat","price":"18,50 €","allergens":["⁴"]},
-      {"title":"2 Schweinesteaks","description":"mit Sauce Bearnaise und Kretanischen Kartoffeln","price":"19,90 €","allergens":["¹","²","ᶜ","ᴳ"]},
-      {"title":"2 Lammkoteletts mit Gyros","description":"mit Pommes frites, Reis und Salat","price":"22,90 €","allergens":[]},
+      {"title":"Suflaki","description":"2 Fleischspieße mit Pommes frites, Reis und Salat","price":"18,50 €","allergens":["⁴"]},
+      {"title":"Suzuki","description":"3 Mettröllchen mit Pommes frites, Reis und Salat","price":"18,00 €","allergens":["⁴"]},
+      {"title":"Bifteki","description":"Hackfleisch gefüllt mit Käse","price":"19,50 €","allergens":["¹","⁴","ᴳ"]},
+      {"title":"2 Schweinefilets mit Gyros","description":"mit Pommes frites, Reis und Salat","price":"23,50 €","allergens":["⁴"]},
+      {"title":"Thessaloniki-Teller","description":"Gyros, Bifteki mit Käse gefüllt, Zaziki, Pommes, Reis und Salat","price":"23,90 €","allergens":["¹","⁴","ᴳ"]},
+      {"title":"Bauernplatte","description":"Suflaki, Schweinesteak, Gyros, Pommes, Reis und Salat","price":"20,90 €","allergens":["⁴"]},
+      {"title":"Ouzo-Platte","description":"Suzuki, Suflaki, Gyros, Pommes, Reis und Salat","price":"20,90 €","allergens":["⁴"]},
+      {"title":"Helena-Teller","description":"Hähnchenbrustfilet mit Zaziki, Pommes, Reis und Salat","price":"19,50 €","allergens":["⁴","ᴳ"]},
+      {"title":"Grill-Teller","description":"Suflaki, Schweinesteak, Gyros, Suzuki, Pommes, Reis und Salat","price":"24,90 €","allergens":["⁴"]},
+      {"title":"Rinderleber gegrillt","description":"mit Röstzwiebeln, Pommes, Reis und Salat","price":"18,90 €","allergens":["⁴"]},
+      {"title":"Parga-Teller","description":"Suflaki, Gyros, Zaziki, Pommes, Reis und Salat","price":"18,90 €","allergens":["⁴","ᴳ"]},
+      {"title":"Kreta-Teller","description":"Gyros, Rinderleber, Zaziki, Pommes, Reis und Salat","price":"18,90 €","allergens":["⁴","ᴳ"]},
+      {"title":"Nikos-Teller","description":"2 Suzuki, Gyros, Pommes, Reis und Salat","price":"19,90 €","allergens":["⁴"]},
+      {"title":"Vierjahreszeiten-Teller","description":"Steak, Gyros, Suzuki, Pommes, Reis und Salat","price":"19,90 €","allergens":["⁴"]},
+      {"title":"2 Schweinesteaks","description":"mit Sauce Bearnaise und Kretanischen Kartoffeln","price":"22,50 €","allergens":["¹","²","ᶜ","ᴳ"]},
+      {"title":"2 Lammkoteletts mit Gyros","description":"mit Pommes frites, Reis und Salat","price":"24,90 €","allergens":[]},
       {"title":"Extra Sauce","description":"Metaxa Sauce oder Rotwein Sauce","price":"3,50 €","allergens":[]}
     ]
   },
   {
     "category": "Überbackene Gerichte",
     "items": [
-      {"title":"Schweinefilet überbacken","description":"mit Käse in Metaxasauce, Pommes und Reis","price":"22,90 €","allergens":["¹","²","⁴","ᶜ","ᴳ"]},
-      {"title":"Hähnchenbrustfilet überbacken","description":"mit Käse in Metaxasauce, Pommes und Reis","price":"19,90 €","allergens":["¹","²","⁴","ᶜ","ᴳ"]},
-      {"title":"Bifteki überbacken","description":"mit Käse gefüllt in Metaxasauce","price":"19,90 €","allergens":["¹","⁴","ᴳ"]},
-      {"title":"Suflaki überbacken","description":"mit Metaxasauce und Käse","price":"19,90 €","allergens":["¹","⁴","ᴳ"]},
-      {"title":"Suflaki und Gyros überbacken","description":"mit Käse in Metaxasauce","price":"19,90 €","allergens":["¹","⁴","ᴳ"]}
+      {"title":"Schweinefilet überbacken","description":"mit Käse in Metaxasauce, Pommes und Reis","price":"24,90 €","allergens":["¹","²","⁴","ᶜ","ᴳ"]},
+      {"title":"Hähnchenbrustfilet überbacken","description":"mit Käse in Metaxasauce, Pommes und Reis","price":"22,50 €","allergens":["¹","²","⁴","ᶜ","ᴳ"]},
+      {"title":"Bifteki überbacken","description":"mit Käse gefüllt in Metaxasauce","price":"22,50 €","allergens":["¹","⁴","ᴳ"]},
+      {"title":"Suflaki überbacken","description":"mit Metaxasauce und Käse","price":"21,90 €","allergens":["¹","⁴","ᴳ"]},
+      {"title":"Suflaki und Gyros überbacken","description":"mit Käse in Metaxasauce","price":"21,90 €","allergens":["¹","⁴","ᴳ"]}
     ]
   },
   {
     "category": "Pfannengerichte",
     "items": [
-      {"title":"Gyros-Pfanne","description":"mit Pommes, Tomatenknoblauchsauce und Salat","price":"17,50 €","allergens":["¹","⁴","ᴳ"]},
-      {"title":"Spaghetti mit Gyros","description":"mit Metaxasauce und Käse überbacken","price":"18,50 €","allergens":["¹","ᴳ"]},
-      {"title":"Langkornnudeln mit Gyros","description":"in Metaxasauce überbacken","price":"18,50 €","allergens":["¹","ᴳ"]},
-      {"title":"Gyros in Metaxasauce","description":"verfeinert mit Creme fraiche","price":"18,50 €","allergens":["ᴳ"]},
+      {"title":"Gyros-Pfanne","description":"mit Pommes, Tomatenknoblauchsauce und Salat","price":"19,50 €","allergens":["¹","⁴","ᴳ"]},
+      {"title":"Spaghetti mit Gyros","description":"mit Metaxasauce und Käse überbacken","price":"19,50 €","allergens":["¹","ᴳ"]},
+      {"title":"Langkornnudeln mit Gyros","description":"in Metaxasauce überbacken","price":"19,50 €","allergens":["¹","ᴳ"]},
+      {"title":"Gyros in Metaxasauce","description":"verfeinert mit Creme fraiche","price":"19,50 €","allergens":["ᴳ"]},
       {"title":"Gyros in Rotweinsauce","description":"N/A","price":"19,50 €","allergens":[]},
-      {"title":"Amudia-Teller","description":"Schweinefilet mit Rotweinsauce","price":"22,90 €","allergens":["¹","⁴","ᴳ"]},
-      {"title":"Iraklion-Teller","description":"Lammfilet mit Metaxa oder Rotweinsauce","price":"29,90 €","allergens":["¹","⁴","ᶜ","ᴳ"]}
+      {"title":"Amudia-Teller","description":"Schweinefilet mit Rotweinsauce","price":"24,90 €","allergens":["¹","⁴","ᴳ"]},
+      {"title":"Iraklion-Teller","description":"Lammfilet mit Metaxa oder Rotweinsauce","price":"31,90 €","allergens":["¹","⁴","ᶜ","ᴳ"]}
     ]
   },
   {
     "category": "Lammspezialitäten vom Grill",
     "items": [
-      {"title":"Lammkoteletts","description":"3 Stück mit Pommes, Reis und Salat","price":"26,90 €","allergens":[]},
-      {"title":"Lammkoteletts mit Bohnen","description":"3 Stück mit Bohnen und Salat","price":"26,90 €","allergens":["³"]},
-      {"title":"Lammfiletspitzen","description":"3 Stück mit Pommes, Reis und Salat","price":"29,90 €","allergens":[]},
-      {"title":"Lammfiletspitzen mit Sauce","description":"mit Butterreis und Bearnaise","price":"29,90 €","allergens":["¹","ᴳ"]},
-      {"title":"Feinschmecker Platte","description":"Lamm, Schweinefilet, Kartoffeln und Salat","price":"33,90 €","allergens":["ᶜ","ᴳ"]}
+      {"title":"Lammkoteletts","description":"3 Stück mit Pommes, Reis und Salat","price":"28,90 €","allergens":[]},
+      {"title":"Lammkoteletts mit Bohnen","description":"3 Stück mit Bohnen und Salat","price":"28,90 €","allergens":["³"]},
+      {"title":"Lammfiletspitzen","description":"3 Stück mit Pommes, Reis und Salat","price":"31,90 €","allergens":[]},
+      {"title":"Lammfiletspitzen mit Sauce","description":"mit Butterreis und Bearnaise","price":"31,90 €","allergens":["¹","ᴳ"]},
+      {"title":"Feinschmecker Platte","description":"Lamm, Schweinefilet, Kartoffeln und Salat","price":"34,90 €","allergens":["ᶜ","ᴳ"]}
     ]
   },
   {
-    "category": "Gerichte aus dem Backofen",
-    "items": [
-      {"title":"Lammfleisch","description":"wahlweise mit Nudeln oder Bohnen","price":"20,90 €","allergens":[]},
-      {"title":"Stifado","description":"Lammfleisch mit geschmorten Zwiebeln","price":"20,90 €","allergens":[]}
-    ]
-  },
-  {
-    "category": "Platten für mehrere Personen",
+    "category": "Platten für 2 bis 4 Personen",
     "items": [
       {"title":"Apollon-Platte","description":"verschiedene Fleischsorten mit Beilagen","price":"48,00 €","allergens":["⁴","ᴳ"]},
       {"title":"Hellas-Platte","description":"große Platte für mehrere Personen","price":"96,00 €","allergens":["⁴","ᴳ"]}
@@ -326,13 +319,13 @@
       {
         "title": "1 Suflaki überbacken",
         "description": "mit Käse, Pommes frites und Salat",
-        "price": "15,90 €",
+        "price": "16,90 €",
         "allergens": ["¹","ᴳ"]
       },
       {
         "title": "2 Suzuki überbacken",
         "description": "mit Pommes frites und Salat",
-        "price": "15,90 €",
+        "price": "16,50 €",
         "allergens": ["⁴","ᴳ"]
       },
       {
@@ -344,19 +337,19 @@
       {
         "title": "1 Hähnchenbrustfilet",
         "description": "in Metaxasauce mit Pommes frites und Salat",
-        "price": "17,00 €",
+        "price": "17,90 €",
         "allergens": ["⁴","ᴳ"]
       },
       {
         "title": "2 Schweinefilets",
         "description": "in Metaxasauce mit Pommes frites und Salat",
-        "price": "20,50 €",
+        "price": "22,50 €",
         "allergens": ["⁴","ᴳ"]
       },
       {
         "title": "Suflaki 1 Spieß",
         "description": "mit Pommes frites, Reis und Salat",
-        "price": "13,90 €",
+        "price": "15,90 €",
         "allergens": ["⁴"]
       }
     ]
@@ -367,25 +360,25 @@
       {
         "title": "Lachssteak ca. 180g",
         "description": "mit Butterreis, Gemüse und Salat",
-        "price": "23,90 €",
+        "price": "24,90 €",
         "allergens": ["ᴰ","ᴳ"]
       },
       {
         "title": "Kalamaria",
         "description": "gebackener Tintenfisch mit Butterreis, Gemüse, Cocktailsauce und Salat",
-        "price": "22,90 €",
+        "price": "23,90 €",
         "allergens": ["³","ᴰ","ᴳ"]
       },
       {
         "title": "Fischplatte",
         "description": "Lachs, Scampis, Kalamaris, Gemüse, Butterreis, Salat",
-        "price": "25,90 €",
+        "price": "27,90 €",
         "allergens": []
       },
       {
         "title": "5 Scampi",
         "description": "mit Butterreis, Gemüse und Salat",
-        "price": "24,90 €",
+        "price": "26,90 €",
         "allergens": ["ᴮ","ᴳ"]
       }
     ]
@@ -428,69 +421,69 @@
   {
     "category": "Alkoholfreie Getränke",
     "items": [
-      {"title":"Eistee (0,2 l)","description":"N/A","price":"3,30 €","allergens":["¹"]},
+      {"title":"Eistee (0,2 l)","description":"N/A","price":"3,50 €","allergens":["¹"]},
       {"title":"Eistee (0,4 l)","description":"N/A","price":"4,80 €","allergens":["¹"]},
-      {"title":"Coca Cola (0,2 l)","description":"N/A","price":"3,30 €","allergens":["¹","⁷"]},
+      {"title":"Coca Cola (0,2 l)","description":"N/A","price":"3,50 €","allergens":["¹","⁷"]},
       {"title":"Coca Cola (0,4 l)","description":"N/A","price":"4,80 €","allergens":["¹","⁷"]},
-      {"title":"Cola Light (0,2 l)","description":"N/A","price":"3,30 €","allergens":["¹","²","⁵","⁶","⁷"]},
+      {"title":"Cola Light (0,2 l)","description":"N/A","price":"3,50 €","allergens":["¹","²","⁵","⁶","⁷"]},
       {"title":"Cola Light (0,4 l)","description":"N/A","price":"4,80 €","allergens":["¹","²","⁵","⁶","⁷"]},
-      {"title":"Fanta (0,2 l)","description":"N/A","price":"3,30 €","allergens":["¹","²","³"]},
+      {"title":"Fanta (0,2 l)","description":"N/A","price":"3,50 €","allergens":["¹","²","³"]},
       {"title":"Fanta (0,4 l)","description":"N/A","price":"4,80 €","allergens":["¹","²","³"]},
-      {"title":"Spezi (0,2 l)","description":"N/A","price":"3,30 €","allergens":["¹","²","³","⁷"]},
+      {"title":"Spezi (0,2 l)","description":"N/A","price":"3,50 €","allergens":["¹","²","³","⁷"]},
       {"title":"Spezi (0,4 l)","description":"N/A","price":"4,80 €","allergens":["¹","²","³","⁷"]},
-      {"title":"Sprite (0,2 l)","description":"N/A","price":"3,30 €","allergens":["²"]},
+      {"title":"Sprite (0,2 l)","description":"N/A","price":"3,50 €","allergens":["²"]},
       {"title":"Sprite (0,4 l)","description":"N/A","price":"4,80 €","allergens":["²"]},
-      {"title":"Mineralwasser (0,25 l)","description":"N/A","price":"3,20 €","allergens":[]},
-      {"title":"Mineralwasser (0,7 l)","description":"N/A","price":"7,50 €","allergens":[]},
-      {"title":"Stilles Wasser (0,25 l)","description":"N/A","price":"3,20 €","allergens":[]},
-      {"title":"Bitter Lemon (0,2 l)","description":"N/A","price":"3,30 €","allergens":["³","⁸"]},
+      {"title":"Mineralwasser (0,25 l)","description":"N/A","price":"3,50 €","allergens":[]},
+      {"title":"Mineralwasser (0,7 l)","description":"N/A","price":"7,90 €","allergens":[]},
+      {"title":"Stilles Wasser (0,25 l)","description":"N/A","price":"3,50 €","allergens":[]},
+      {"title":"Bitter Lemon (0,2 l)","description":"N/A","price":"3,50 €","allergens":["³","⁸"]},
       {"title":"Bitter Lemon (0,4 l)","description":"N/A","price":"4,90 €","allergens":["⁸"]},
-      {"title":"Ginger Ale (0,2 l)","description":"N/A","price":"3,30 €","allergens":["¹","⁹"]},
+      {"title":"Ginger Ale (0,2 l)","description":"N/A","price":"3,50 €","allergens":["¹","⁹"]},
       {"title":"Ginger Ale (0,4 l)","description":"N/A","price":"4,90 €","allergens":["⁹"]}
     ]
   },
   {
     "category": "Säfte",
     "items": [
-      {"title":"Apfelsaft (0,2 l)","description":"N/A","price":"3,30 €","allergens":[]},
+      {"title":"Apfelsaft (0,2 l)","description":"N/A","price":"3,50 €","allergens":[]},
       {"title":"Apfelsaft (0,4 l)","description":"N/A","price":"5,20 €","allergens":[]},
-      {"title":"Apfelschorle (0,2 l)","description":"N/A","price":"3,00 €","allergens":[]},
-      {"title":"Apfelschorle (0,4 l)","description":"N/A","price":"4,50 €","allergens":[]},
-      {"title":"Orangensaft (0,2 l)","description":"N/A","price":"3,30 €","allergens":[]},
+      {"title":"Apfelschorle (0,2 l)","description":"N/A","price":"3,50 €","allergens":[]},
+      {"title":"Apfelschorle (0,4 l)","description":"N/A","price":"4,80 €","allergens":[]},
+      {"title":"Orangensaft (0,2 l)","description":"N/A","price":"3,50 €","allergens":[]},
       {"title":"Orangensaft (0,4 l)","description":"N/A","price":"5,20 €","allergens":[]},
-      {"title":"Johannisbeernektar (0,2 l)","description":"N/A","price":"3,30 €","allergens":[]},
+      {"title":"Johannisbeernektar (0,2 l)","description":"N/A","price":"3,50 €","allergens":[]},
       {"title":"Johannisbeernektar (0,4 l)","description":"N/A","price":"5,20 €","allergens":[]}
     ]
   },
   {
     "category": "Biere",
     "items": [
-      {"title":"Gilde Ratskeller (0,3 l)","description":"N/A","price":"3,30 €","allergens":["ᴷ"]},
-      {"title":"Gilde Ratskeller (0,4 l)","description":"N/A","price":"3,90 €","allergens":["ᴷ"]},
-      {"title":"Alsterwasser (0,3 l)","description":"N/A","price":"3,30 €","allergens":[]},
-      {"title":"Alsterwasser (0,4 l)","description":"N/A","price":"3,90 €","allergens":[]},
-      {"title":"Erdinger (0,5 l)","description":"Flasche","price":"5,50 €","allergens":["ᴷ"]},
-      {"title":"Gilde frei (0,33 l)","description":"Flasche","price":"3,90 €","allergens":[]},
-      {"title":"Köstritzer (0,31 l)","description":"N/A","price":"4,20 €","allergens":["ᴷ"]}
+      {"title":"Gilde Ratskeller (0,3 l)","description":"N/A","price":"3,70 €","allergens":["ᴷ"]},
+      {"title":"Gilde Ratskeller (0,4 l)","description":"N/A","price":"4,70 €","allergens":["ᴷ"]},
+      {"title":"Alsterwasser (0,3 l)","description":"N/A","price":"3,70 €","allergens":[]},
+      {"title":"Alsterwasser (0,4 l)","description":"N/A","price":"4,70 €","allergens":[]},
+      {"title":"Erdinger (0,5 l)","description":"Flasche","price":"5,90 €","allergens":["ᴷ"]},
+      {"title":"Gilde frei (0,33 l)","description":"Flasche","price":"4,40 €","allergens":[]},
+      {"title":"Köstritzer (0,31 l)","description":"N/A","price":"4,60 €","allergens":["ᴷ"]}
     ]
   },
   {
     "category": "Warme Getränke",
     "items": [
-      {"title":"Griechischer Mokka","description":"N/A","price":"3,00 €","allergens":[]},
-      {"title":"Tasse Kaffee","description":"N/A","price":"3,00 €","allergens":[]},
-      {"title":"Cappuccino","description":"N/A","price":"3,50 €","allergens":[]},
-      {"title":"Espresso","description":"N/A","price":"2,50 €","allergens":[]},
-      {"title":"Tasse Tee","description":"N/A","price":"2,70 €","allergens":[]},
-      {"title":"Latte Macchiato","description":"N/A","price":"4,20 €","allergens":[]}
+      {"title":"Griechischer Mokka","description":"N/A","price":"3,50 €","allergens":[]},
+      {"title":"Tasse Kaffee","description":"N/A","price":"3,50 €","allergens":[]},
+      {"title":"Cappuccino","description":"N/A","price":"4,50 €","allergens":[]},
+      {"title":"Espresso","description":"N/A","price":"3,00 €","allergens":[]},
+      {"title":"Tasse Tee","description":"N/A","price":"3,00 €","allergens":[]},
+      {"title":"Latte Macchiato","description":"N/A","price":"4,60 €","allergens":[]}
     ]
   },
   {
     "category": "Aperitifs",
     "items": [
-      {"title":"Ouzo (2 cl, 37,5%)","description":"N/A","price":"2,70 €","allergens":[]},
+      {"title":"Ouzo (2 cl, 37,5%)","description":"N/A","price":"3,00 €","allergens":[]},
       {"title":"Sherry (2 cl, 15%)","description":"N/A","price":"3,90 €","allergens":[]},
-      {"title":"Campari","description":"mit Orangensaft oder Wasser","price":"5,90 €","allergens":[]}
+      {"title":"Campari","description":"mit Orangensaft oder Wasser","price":"6,90 €","allergens":[]}
     ]
   },
   {
@@ -504,22 +497,22 @@
       {"title":"Fernet Branca (2 cl)","description":"42%","price":"3,90 €","allergens":[]},
       {"title":"Wodka (2 cl)","description":"40%","price":"4,70 €","allergens":[]},
       {"title":"Johnnie Walker (4 cl)","description":"40%","price":"5,90 €","allergens":[]},
-      {"title":"Metaxa 5* (2 cl)","description":"38%","price":"4,50 €","allergens":[]},
+      {"title":"Metaxa 5* (2 cl)","description":"38%","price":"5,90 €","allergens":[]},
       {"title":"Ramazzotti (2 cl)","description":"30%","price":"4,20 €","allergens":[]}
     ]
   },
   {
     "category": "Rotweine",
     "items": [
-      {"title":"Lieblicher Landwein (0,2 l, 11%)","description":"lieblich","price":"5,50 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Lieblicher Landwein (0,5 l, 11%)","description":"lieblich","price":"13,00 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Trockener Landwein (0,2 l, 11%)","description":"trocken","price":"5,50 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Trockener Landwein (0,5 l, 11%)","description":"trocken","price":"13,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Lieblicher Landwein (0,2 l, 11%)","description":"lieblich","price":"6,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Lieblicher Landwein (0,5 l, 11%)","description":"lieblich","price":"15,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,2 l, 11%)","description":"trocken","price":"6,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,5 l, 11%)","description":"trocken","price":"15,00 €","allergens":["¹⁰","¹¹"]},
       {"title":"Mavrodafne Likörwein (0,2 l, 15%)","description":"Likörwein, süß","price":"7,90 €","allergens":[]},
       {"title":"Mavrodafne Likörwein (0,5 l, 15%)","description":"Likörwein, süß","price":"17,00 €","allergens":[]},
       {"title":"Merlot (0,2 l, 14%)","description":"rot, weich","price":"7,90 €","allergens":[]},
       {"title":"Naoussa Boutari (0,2 l, 12,5%)","description":"kräftig, Barrique","price":"7,90 €","allergens":[]},
-      {"title":"Naoussa Boutari (0,75 l, 12,5%)","description":"kräftig","price":"25,50 €","allergens":[]},
+      {"title":"Naoussa Boutari (0,75 l, 12,5%)","description":"kräftig","price":"28,90 €","allergens":[]},
       {"title":"Cabernet Sauvignon (0,2 l, 14%)","description":"kräftig","price":"7,90 €","allergens":[]},
       {"title":"Cabernet Sauvignon (0,75 l, 14%)","description":"kräftig","price":"27,90 €","allergens":[]}
     ]
@@ -527,23 +520,23 @@
   {
     "category": "Weißweine",
     "items": [
-      {"title":"Imiglikos halbsüß (0,2 l, 11%)","description":"halbsüß","price":"5,50 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Imiglikos halbsüß (0,5 l, 11%)","description":"halbsüß","price":"13,00 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Trockener Landwein (0,2 l, 11%)","description":"trocken","price":"5,50 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Trockener Landwein (0,5 l, 11%)","description":"trocken","price":"13,00 €","allergens":["¹⁰","¹¹"]},
-      {"title":"Retsina (0,2 l, 10,5%)","description":"geharzt","price":"5,50 €","allergens":[]},
-      {"title":"Retsina (0,5 l, 10,5%)","description":"geharzt","price":"13,00 €","allergens":[]},
+      {"title":"Imiglikos halbsüß (0,2 l, 11%)","description":"halbsüß","price":"6,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Imiglikos halbsüß (0,5 l, 11%)","description":"halbsüß","price":"15,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,2 l, 11%)","description":"trocken","price":"6,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Trockener Landwein (0,5 l, 11%)","description":"trocken","price":"15,00 €","allergens":["¹⁰","¹¹"]},
+      {"title":"Retsina (0,2 l, 10,5%)","description":"geharzt","price":"6,00 €","allergens":[]},
+      {"title":"Retsina (0,5 l, 10,5%)","description":"geharzt","price":"15,00 €","allergens":[]},
       {"title":"Samos (0,2 l, 15%)","description":"süß","price":"7,50 €","allergens":[]},
       {"title":"Samos (0,5 l, 15%)","description":"süß","price":"16,90 €","allergens":[]},
-      {"title":"Moschofilero (0,2 l, 11%)","description":"trocken, fruchtig","price":"7,50 €","allergens":[]},
-      {"title":"Moschofilero (0,75 l, 11%)","description":"fruchtig","price":"26,50 €","allergens":[]}
+      {"title":"Moschofilero (0,2 l, 11%)","description":"trocken, fruchtig","price":"7,90 €","allergens":[]},
+      {"title":"Moschofilero (0,75 l, 11%)","description":"fruchtig","price":"28,90 €","allergens":[]}
     ]
   },
   {
     "category": "Roséweine",
     "items": [
-      {"title":"Trockener Rosé (0,2 l, 11,5%)","description":"trocken","price":"5,50 €","allergens":[]},
-      {"title":"Trockener Rosé (0,5 l, 11,5%)","description":"trocken","price":"13,00 €","allergens":[]}
+      {"title":"Trockener Rosé (0,2 l, 11,5%)","description":"trocken","price":"6,00 €","allergens":[]},
+      {"title":"Trockener Rosé (0,5 l, 11,5%)","description":"trocken","price":"15,00 €","allergens":[]}
     ]
   }
 ]
