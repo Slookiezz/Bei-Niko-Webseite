@@ -1,0 +1,292 @@
+[
+  {
+    "category": "Cold Starters",
+    "items": [
+      { "title": "Appetizer (selection of starters)", "description": "N/A", "price": "13,90 €", "allergens": [] },
+      { "title": "Appetizer – Special (for 2 persons)", "description": "N/A", "price": "26,50 €", "allergens": [] },
+      { "title": "Olives & Pepperoni", "description": "N/A", "price": "6,00 €", "allergens": ["⁶"] },
+      { "title": "Tzatziki", "description": "most popular starter", "price": "6,00 €", "allergens": ["ᴳ"] },
+      { "title": "Taramasalata", "description": "fish roe with olive oil", "price": "7,30 €", "allergens": ["ᴰ"] },
+      { "title": "Dolmadakia", "description": "vine leaves with rice & tzatziki", "price": "7,90 €", "allergens": ["ᴳ"] },
+      { "title": "Cream Trilogy", "description": "tzatziki, taramasalata, cheese cream", "price": "9,50 €", "allergens": ["ᴳ"] }
+    ]
+  },
+  {
+    "category": "Warm Starters",
+    "items": [
+      { "title": "Breaded Prawns", "description": "N/A", "price": "11,00 €", "allergens": ["ᴮ"] },
+      { "title": "Zucchini", "description": "fried with tomato garlic sauce & tzatziki", "price": "11,00 €", "allergens": ["ᴮ","ᴰ","ᴳ"] },
+      { "title": "Fried Calamari", "description": "served with tzatziki", "price": "12,00 €", "allergens": ["ᴰ","ᴳ"] },
+      { "title": "Aubergine", "description": "with tomato garlic sauce", "price": "11,00 €", "allergens": ["¹","ᴳ"] },
+      { "title": "Aubergine with Minced Meat", "description": "gratinated with cheese", "price": "12,00 €", "allergens": ["¹","ᴳ"] },
+      { "title": "Stuffed Mushrooms", "description": "with bacon, gravy & cheese", "price": "10,90 €", "allergens": ["¹","ᴰ"] },
+      { "title": "Peppers", "description": "fried with garlic & olive oil", "price": "8,50 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Soups",
+    "items": [
+      { "title": "Tomato Soup", "description": "N/A", "price": "5,90 €", "allergens": ["⁴"] },
+      { "title": "Traditional Greek Bean Soup", "description": "N/A", "price": "5,90 €", "allergens": ["³"] },
+      { "title": "Chicken Soup", "description": "N/A", "price": "5,90 €", "allergens": ["¹","⁴"] }
+    ]
+  },
+  {
+    "category": "Cheese Specialties",
+    "items": [
+      { "title": "Saganaki", "description": "breaded sheep's cheese", "price": "9,90 €", "allergens": ["ᴳ"] },
+      { "title": "Feta", "description": "sheep's cheese with onions and oil", "price": "8,90 €", "allergens": ["ᴳ"] },
+      { "title": "Feta", "description": "gratinated with onions and oil", "price": "11,50 €", "allergens": ["ᴳ"] },
+      { "title": "Ktipiti", "description": "spicy sheep's cheese cream with peppers", "price": "7,90 €", "allergens": ["¹","ᴳ"] },
+      { "title": "Puff Pastry Parcels", "description": "filled with cheese, served with ktipiti", "price": "8,90 €", "allergens": ["¹","ᴳ"] }
+    ]
+  },
+  {
+    "category": "Salads",
+    "items": [
+      { "title": "Zeus Salad", "description": "mixed salad with egg and gyros", "price": "17,00 €", "allergens": [] },
+      { "title": "Mixed Salad", "description": "with dressing", "price": "5,90 €", "allergens": ["ᴳ","¹"] },
+      { "title": "Large Village Salad", "description": "with green salad, tomatoes, cucumbers, cheese, olives, pepperoni, onions and peppers", "price": "13,50 €", "allergens": ["¹","⁶","ᴳ"] },
+      { "title": "Tuna Salad", "description": "with green salad, coleslaw, tuna, tomatoes, cucumbers, egg, olives and pepperoni", "price": "16,90 €", "allergens": ["ᶜ","ᴰ","⁶"] },
+      { "title": "Chef's Salad", "description": "mixed salad with egg and grilled pork steak strips", "price": "16,90 €", "allergens": ["ᶜ"] },
+      { "title": "Corfu Salad", "description": "mixed salad with egg and grilled chicken breast strips", "price": "16,90 €", "allergens": ["ᶜ"] }
+    ]
+  },
+  {
+    "category": "Side Dishes",
+    "items": [
+      { "title": "French Fries", "description": "N/A", "price": "3,80 €", "allergens": [] },
+      { "title": "Rice", "description": "N/A", "price": "3,80 €", "allergens": [] },
+      { "title": "Baked Potato", "description": "N/A", "price": "7,50 €", "allergens": [] },
+      { "title": "Cretan Potatoes", "description": "N/A", "price": "7,50 €", "allergens": ["¹","²","ᶜ","ᴳ"] }
+    ]
+  },
+  {
+    "category": "Vegetarian Dishes",
+    "items": [
+      { "title": "Baked Vegetables", "description": "with hollandaise sauce", "price": "14,50 €", "allergens": [] },
+      { "title": "Broad Beans or Green Beans", "description": "au gratin", "price": "12,70 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Gyros Dishes",
+    "items": [
+      { "title": "Gyros with Tzatziki", "description": "with french fries, rice and salad", "price": "17,90 €", "allergens": [] },
+      { "title": "Gyros au Gratin with Cheese in Metaxa Sauce", "description": "with Cretan potatoes and salad", "price": "21,90 €", "allergens": ["¹","²","ᶜ","ᴳ"] },
+      { "title": "Gyros with Baked Potato", "description": "served with salad", "price": "19,50 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Grilled Dishes",
+    "items": [
+      { "title": "Souvlaki", "description": "2 meat skewers with french fries, rice and salad", "price": "18,50 €", "allergens": ["⁴"] },
+      { "title": "Suzuki", "description": "3 minced meat rolls with french fries, rice and salad", "price": "18,00 €", "allergens": ["⁴"] },
+      { "title": "Bifteki", "description": "minced meat filled with cheese", "price": "19,50 €", "allergens": ["¹","⁴","ᴳ"] },
+      { "title": "2 Pork Tenderloin Fillets with Gyros", "description": "with french fries, rice and salad", "price": "23,50 €", "allergens": ["⁴"] },
+      { "title": "Thessaloniki Plate", "description": "gyros, bifteki filled with cheese, tzatziki, fries, rice and salad", "price": "23,90 €", "allergens": ["¹","⁴","ᴳ"] },
+      { "title": "Farmer's Plate", "description": "souvlaki, pork steak, gyros, fries, rice and salad", "price": "20,90 €", "allergens": ["⁴"] },
+      { "title": "Ouzo Plate", "description": "suzuki, souvlaki, gyros, fries, rice and salad", "price": "20,90 €", "allergens": ["⁴"] },
+      { "title": "Helena Plate", "description": "chicken breast fillet with tzatziki, fries, rice and salad", "price": "19,50 €", "allergens": ["⁴","ᴳ"] },
+      { "title": "Grill Plate", "description": "souvlaki, pork steak, gyros, suzuki, fries, rice and salad", "price": "24,90 €", "allergens": ["⁴"] },
+      { "title": "Grilled Beef Liver", "description": "with roasted onions, fries, rice and salad", "price": "18,90 €", "allergens": ["⁴"] },
+      { "title": "Parga Plate", "description": "souvlaki, gyros, tzatziki, fries, rice and salad", "price": "18,90 €", "allergens": ["⁴","ᴳ"] },
+      { "title": "Crete Plate", "description": "gyros, beef liver, tzatziki, fries, rice and salad", "price": "18,90 €", "allergens": ["⁴","ᴳ"] },
+      { "title": "Niko's Plate", "description": "2 suzuki, gyros, fries, rice and salad", "price": "19,90 €", "allergens": ["⁴"] },
+      { "title": "Four Seasons Plate", "description": "steak, gyros, suzuki, fries, rice and salad", "price": "19,90 €", "allergens": ["⁴"] },
+      { "title": "2 Pork Steaks", "description": "with béarnaise sauce and Cretan potatoes", "price": "22,50 €", "allergens": ["¹","²","ᶜ","ᴳ"] },
+      { "title": "2 Lamb Chops with Gyros", "description": "with french fries, rice and salad", "price": "24,90 €", "allergens": [] },
+      { "title": "Extra Sauce", "description": "Metaxa sauce or red wine sauce", "price": "3,50 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Au Gratin Dishes",
+    "items": [
+      { "title": "Pork Tenderloin au Gratin", "description": "with cheese in Metaxa sauce, fries and rice", "price": "24,90 €", "allergens": ["¹","²","⁴","ᶜ","ᴳ"] },
+      { "title": "Chicken Breast Fillet au Gratin", "description": "with cheese in Metaxa sauce, fries and rice", "price": "22,50 €", "allergens": ["¹","²","⁴","ᶜ","ᴳ"] },
+      { "title": "Bifteki au Gratin", "description": "filled with cheese in Metaxa sauce", "price": "22,50 €", "allergens": ["¹","⁴","ᴳ"] },
+      { "title": "Souvlaki au Gratin", "description": "with Metaxa sauce and cheese", "price": "21,90 €", "allergens": ["¹","⁴","ᴳ"] },
+      { "title": "Souvlaki and Gyros au Gratin", "description": "with cheese in Metaxa sauce", "price": "21,90 €", "allergens": ["¹","⁴","ᴳ"] }
+    ]
+  },
+  {
+    "category": "Pan Dishes",
+    "items": [
+      { "title": "Gyros Pan", "description": "with fries, tomato garlic sauce and salad", "price": "19,50 €", "allergens": ["¹","⁴","ᴳ"] },
+      { "title": "Spaghetti with Gyros", "description": "au gratin with Metaxa sauce and cheese", "price": "19,50 €", "allergens": ["¹","ᴳ"] },
+      { "title": "Long Pasta with Gyros", "description": "au gratin in Metaxa sauce", "price": "19,50 €", "allergens": ["¹","ᴳ"] },
+      { "title": "Gyros in Metaxa Sauce", "description": "refined with crème fraîche", "price": "19,50 €", "allergens": ["ᴳ"] },
+      { "title": "Gyros in Red Wine Sauce", "description": "N/A", "price": "19,50 €", "allergens": [] },
+      { "title": "Amudia Plate", "description": "pork tenderloin with red wine sauce", "price": "24,90 €", "allergens": ["¹","⁴","ᴳ"] },
+      { "title": "Heraklion Plate", "description": "lamb fillet with Metaxa or red wine sauce", "price": "31,90 €", "allergens": ["¹","⁴","ᶜ","ᴳ"] }
+    ]
+  },
+  {
+    "category": "Grilled Lamb Specialties",
+    "items": [
+      { "title": "Lamb Chops", "description": "3 pieces with fries, rice and salad", "price": "28,90 €", "allergens": [] },
+      { "title": "Lamb Chops with Beans", "description": "3 pieces with beans and salad", "price": "28,90 €", "allergens": ["³"] },
+      { "title": "Lamb Fillet Tips", "description": "3 pieces with fries, rice and salad", "price": "31,90 €", "allergens": [] },
+      { "title": "Lamb Fillet Tips with Sauce", "description": "with butter rice and béarnaise sauce", "price": "31,90 €", "allergens": ["¹","ᴳ"] },
+      { "title": "Gourmet Platter", "description": "lamb, pork tenderloin, potatoes and salad", "price": "34,90 €", "allergens": ["ᶜ","ᴳ"] }
+    ]
+  },
+  {
+    "category": "Platters for 2 to 4 Persons",
+    "items": [
+      { "title": "Apollon Platter", "description": "assorted meats with side dishes", "price": "48,00 €", "allergens": ["⁴","ᴳ"] },
+      { "title": "Hellas Platter", "description": "large platter for multiple persons", "price": "96,00 €", "allergens": ["⁴","ᴳ"] }
+    ]
+  },
+  {
+    "category": "For a Lighter Appetite",
+    "items": [
+      { "title": "Spaghetti with Metaxa Sauce", "description": "au gratin with cheese, served with salad", "price": "13,90 €", "allergens": ["¹","ᴳ","ᴴ"] },
+      { "title": "1 Souvlaki au Gratin", "description": "with cheese, french fries and salad", "price": "16,90 €", "allergens": ["¹","ᴳ"] },
+      { "title": "2 Suzuki au Gratin", "description": "with french fries and salad", "price": "16,50 €", "allergens": ["⁴","ᴳ"] },
+      { "title": "Spaghetti with Bolognese Sauce", "description": "served with salad", "price": "13,90 €", "allergens": ["ᴳ","ᴴ"] },
+      { "title": "1 Chicken Breast Fillet", "description": "in Metaxa sauce with french fries and salad", "price": "17,90 €", "allergens": ["⁴","ᴳ"] },
+      { "title": "2 Pork Tenderloin Fillets", "description": "in Metaxa sauce with french fries and salad", "price": "22,50 €", "allergens": ["⁴","ᴳ"] },
+      { "title": "Souvlaki 1 Skewer", "description": "with french fries, rice and salad", "price": "15,90 €", "allergens": ["⁴"] }
+    ]
+  },
+  {
+    "category": "Fish Specialties",
+    "items": [
+      { "title": "Salmon Steak approx. 180g", "description": "with butter rice, vegetables and salad", "price": "24,90 €", "allergens": ["ᴰ","ᴳ"] },
+      { "title": "Kalamaria", "description": "baked squid with butter rice, vegetables, cocktail sauce and salad", "price": "23,90 €", "allergens": ["³","ᴰ","ᴳ"] },
+      { "title": "Fish Platter", "description": "salmon, scampi, calamari, vegetables, butter rice, salad", "price": "27,90 €", "allergens": [] },
+      { "title": "5 Scampi", "description": "with butter rice, vegetables and salad", "price": "26,90 €", "allergens": ["ᴮ","ᴳ"] }
+    ]
+  },
+  {
+    "category": "Desserts",
+    "items": [
+      { "title": "Greek Dessert", "description": "with Greek honey and walnuts", "price": "5,90 €", "allergens": [] },
+      { "title": "Mixed Ice Cream", "description": "N/A", "price": "5,80 €", "allergens": [] },
+      { "title": "Vanilla Ice Cream with Hot Raspberry Sauce", "description": "N/A", "price": "6,90 €", "allergens": ["¹"] },
+      { "title": "Vanilla Ice Cream with Hot Chocolate Sauce", "description": "N/A", "price": "6,90 €", "allergens": ["¹"] },
+      { "title": "Ice Cream Caramel", "description": "N/A", "price": "6,90 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Non-Alcoholic Beverages",
+    "items": [
+      { "title": "Iced Tea (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["¹"] },
+      { "title": "Iced Tea (0.4 l)", "description": "N/A", "price": "4,80 €", "allergens": ["¹"] },
+      { "title": "Coca Cola (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["¹","⁷"] },
+      { "title": "Coca Cola (0.4 l)", "description": "N/A", "price": "4,80 €", "allergens": ["¹","⁷"] },
+      { "title": "Diet Coke (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["¹","²","⁵","⁶","⁷"] },
+      { "title": "Diet Coke (0.4 l)", "description": "N/A", "price": "4,80 €", "allergens": ["¹","²","⁵","⁶","⁷"] },
+      { "title": "Fanta (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["¹","²","³"] },
+      { "title": "Fanta (0.4 l)", "description": "N/A", "price": "4,80 €", "allergens": ["¹","²","³"] },
+      { "title": "Spezi (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["¹","²","³","⁷"] },
+      { "title": "Spezi (0.4 l)", "description": "N/A", "price": "4,80 €", "allergens": ["¹","²","³","⁷"] },
+      { "title": "Sprite (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["²"] },
+      { "title": "Sprite (0.4 l)", "description": "N/A", "price": "4,80 €", "allergens": ["²"] },
+      { "title": "Sparkling Water (0.25 l)", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Sparkling Water (0.7 l)", "description": "N/A", "price": "7,90 €", "allergens": [] },
+      { "title": "Still Water (0.25 l)", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Bitter Lemon (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["³","⁸"] },
+      { "title": "Bitter Lemon (0.4 l)", "description": "N/A", "price": "4,90 €", "allergens": ["⁸"] },
+      { "title": "Ginger Ale (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": ["¹","⁹"] },
+      { "title": "Ginger Ale (0.4 l)", "description": "N/A", "price": "4,90 €", "allergens": ["⁹"] }
+    ]
+  },
+  {
+    "category": "Juices",
+    "items": [
+      { "title": "Apple Juice (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Apple Juice (0.4 l)", "description": "N/A", "price": "5,20 €", "allergens": [] },
+      { "title": "Apple Juice Spritzer (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Apple Juice Spritzer (0.4 l)", "description": "N/A", "price": "4,80 €", "allergens": [] },
+      { "title": "Orange Juice (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Orange Juice (0.4 l)", "description": "N/A", "price": "5,20 €", "allergens": [] },
+      { "title": "Blackcurrant Nectar (0.2 l)", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Blackcurrant Nectar (0.4 l)", "description": "N/A", "price": "5,20 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Beers",
+    "items": [
+      { "title": "Gilde Ratskeller (0.3 l)", "description": "N/A", "price": "3,70 €", "allergens": ["ᴷ"] },
+      { "title": "Gilde Ratskeller (0.4 l)", "description": "N/A", "price": "4,70 €", "allergens": ["ᴷ"] },
+      { "title": "Alsterwasser (0.3 l)", "description": "N/A", "price": "3,70 €", "allergens": [] },
+      { "title": "Alsterwasser (0.4 l)", "description": "N/A", "price": "4,70 €", "allergens": [] },
+      { "title": "Erdinger (0.5 l)", "description": "bottle", "price": "5,90 €", "allergens": ["ᴷ"] },
+      { "title": "Gilde frei (0.33 l)", "description": "bottle", "price": "4,40 €", "allergens": [] },
+      { "title": "Köstritzer (0.31 l)", "description": "N/A", "price": "4,60 €", "allergens": ["ᴷ"] }
+    ]
+  },
+  {
+    "category": "Hot Beverages",
+    "items": [
+      { "title": "Greek Mocha", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Coffee", "description": "N/A", "price": "3,50 €", "allergens": [] },
+      { "title": "Cappuccino", "description": "N/A", "price": "4,50 €", "allergens": [] },
+      { "title": "Espresso", "description": "N/A", "price": "3,00 €", "allergens": [] },
+      { "title": "Cup of Tea", "description": "N/A", "price": "3,00 €", "allergens": [] },
+      { "title": "Latte Macchiato", "description": "N/A", "price": "4,60 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Aperitifs",
+    "items": [
+      { "title": "Ouzo (2 cl, 37.5%)", "description": "N/A", "price": "3,00 €", "allergens": [] },
+      { "title": "Sherry (2 cl, 15%)", "description": "N/A", "price": "3,90 €", "allergens": [] },
+      { "title": "Campari", "description": "with orange juice or water", "price": "6,90 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Spirits",
+    "items": [
+      { "title": "Ouzo Plomari (2 cl)", "description": "37.5%", "price": "3,70 €", "allergens": [] },
+      { "title": "Tsipouro (2 cl)", "description": "40%", "price": "3,90 €", "allergens": [] },
+      { "title": "Averna (2 cl)", "description": "29%", "price": "3,90 €", "allergens": [] },
+      { "title": "Malteser (2 cl)", "description": "40%", "price": "3,90 €", "allergens": [] },
+      { "title": "Linie Aquavit (2 cl)", "description": "41.5%", "price": "3,90 €", "allergens": [] },
+      { "title": "Fernet Branca (2 cl)", "description": "42%", "price": "3,90 €", "allergens": [] },
+      { "title": "Vodka (2 cl)", "description": "40%", "price": "4,70 €", "allergens": [] },
+      { "title": "Johnnie Walker (4 cl)", "description": "40%", "price": "5,90 €", "allergens": [] },
+      { "title": "Metaxa 5* (2 cl)", "description": "38%", "price": "5,90 €", "allergens": [] },
+      { "title": "Ramazzotti (2 cl)", "description": "30%", "price": "4,20 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Red Wines",
+    "items": [
+      { "title": "Sweet Country Wine (0.2 l, 11%)", "description": "sweet", "price": "6,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Sweet Country Wine (0.5 l, 11%)", "description": "sweet", "price": "15,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Dry Country Wine (0.2 l, 11%)", "description": "dry", "price": "6,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Dry Country Wine (0.5 l, 11%)", "description": "dry", "price": "15,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Mavrodafne Liqueur Wine (0.2 l, 15%)", "description": "liqueur wine, sweet", "price": "7,90 €", "allergens": [] },
+      { "title": "Mavrodafne Liqueur Wine (0.5 l, 15%)", "description": "liqueur wine, sweet", "price": "17,00 €", "allergens": [] },
+      { "title": "Merlot (0.2 l, 14%)", "description": "red, smooth", "price": "7,90 €", "allergens": [] },
+      { "title": "Naoussa Boutari (0.2 l, 12.5%)", "description": "full-bodied, Barrique", "price": "7,90 €", "allergens": [] },
+      { "title": "Naoussa Boutari (0.75 l, 12.5%)", "description": "full-bodied", "price": "28,90 €", "allergens": [] },
+      { "title": "Cabernet Sauvignon (0.2 l, 14%)", "description": "full-bodied", "price": "7,90 €", "allergens": [] },
+      { "title": "Cabernet Sauvignon (0.75 l, 14%)", "description": "full-bodied", "price": "27,90 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "White Wines",
+    "items": [
+      { "title": "Imiglikos Semi-Sweet (0.2 l, 11%)", "description": "semi-sweet", "price": "6,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Imiglikos Semi-Sweet (0.5 l, 11%)", "description": "semi-sweet", "price": "15,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Dry Country Wine (0.2 l, 11%)", "description": "dry", "price": "6,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Dry Country Wine (0.5 l, 11%)", "description": "dry", "price": "15,00 €", "allergens": ["¹⁰","¹¹"] },
+      { "title": "Retsina (0.2 l, 10.5%)", "description": "resinated", "price": "6,00 €", "allergens": [] },
+      { "title": "Retsina (0.5 l, 10.5%)", "description": "resinated", "price": "15,00 €", "allergens": [] },
+      { "title": "Samos (0.2 l, 15%)", "description": "sweet", "price": "7,50 €", "allergens": [] },
+      { "title": "Samos (0.5 l, 15%)", "description": "sweet", "price": "16,90 €", "allergens": [] },
+      { "title": "Moschofilero (0.2 l, 11%)", "description": "dry, fruity", "price": "7,90 €", "allergens": [] },
+      { "title": "Moschofilero (0.75 l, 11%)", "description": "fruity", "price": "28,90 €", "allergens": [] }
+    ]
+  },
+  {
+    "category": "Rosé Wines",
+    "items": [
+      { "title": "Dry Rosé (0.2 l, 11.5%)", "description": "dry", "price": "6,00 €", "allergens": [] },
+      { "title": "Dry Rosé (0.5 l, 11.5%)", "description": "dry", "price": "15,00 €", "allergens": [] }
+    ]
+  }
+]

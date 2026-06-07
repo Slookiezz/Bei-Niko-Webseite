@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" id="htmlRoot">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,17 @@
     <span class="nav-logo-text">Bei Niko</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#about">Über uns</a></li>
-    <li><a href="#speisekarte">Speisekarte</a></li>
-    <li><a href="#ambiente">Ambiente</a></li>
-    <li><a href="#bewertungen">Bewertungen</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
+    <li><a href="#about" data-i18n="nav.about">Über uns</a></li>
+    <li><a href="#speisekarte" data-i18n="nav.menu">Speisekarte</a></li>
+    <li><a href="#ambiente" data-i18n="nav.ambience">Ambiente</a></li>
+    <li><a href="#bewertungen" data-i18n="nav.reviews">Bewertungen</a></li>
+    <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+    <li class="nav-phone-li"><a href="tel:+4951328244135" class="nav-phone">05132 824 41 35</a></li>
   </ul>
-  <a href="tel:+4951328244135" class="nav-phone">05132 824 41 35</a>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="de" onclick="setLanguage('de')" title="Deutsch">🇩🇪</button>
+    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" title="English">🇬🇧</button>
+  </div>
   <button class="mobile-menu-btn" onclick="document.getElementById('mobileNav').classList.add('open')">
     <span></span><span></span><span></span>
   </button>
@@ -34,11 +38,11 @@
 <!-- Mobile Nav -->
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" onclick="this.parentElement.classList.remove('open')">&times;</button>
-  <a href="#about" onclick="this.parentElement.classList.remove('open')">Über uns</a>
-  <a href="#speisekarte" onclick="this.parentElement.classList.remove('open')">Speisekarte</a>
-  <a href="#ambiente" onclick="this.parentElement.classList.remove('open')">Ambiente</a>
-  <a href="#bewertungen" onclick="this.parentElement.classList.remove('open')">Bewertungen</a>
-  <a href="#kontakt" onclick="this.parentElement.classList.remove('open')">Kontakt</a>
+  <a href="#about" onclick="this.parentElement.classList.remove('open')" data-i18n="nav.about">Über uns</a>
+  <a href="#speisekarte" onclick="this.parentElement.classList.remove('open')" data-i18n="nav.menu">Speisekarte</a>
+  <a href="#ambiente" onclick="this.parentElement.classList.remove('open')" data-i18n="nav.ambience">Ambiente</a>
+  <a href="#bewertungen" onclick="this.parentElement.classList.remove('open')" data-i18n="nav.reviews">Bewertungen</a>
+  <a href="#kontakt" onclick="this.parentElement.classList.remove('open')" data-i18n="nav.contact">Kontakt</a>
   <a href="tel:+4951328244135" style="color: var(--gold); font-size: 1.2rem;">05132 824 41 35</a>
 </div>
 
@@ -57,42 +61,42 @@
       <div class="ornament-line"></div>
     </div>
     <h1>Bei <em>Niko</em></h1>
-    <p class="hero-subtitle">Griechische Spezialitäten · Herzlichkeit · Gastfreundschaft</p>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Griechische Spezialitäten · Herzlichkeit · Gastfreundschaft</p>
     <div class="hero-info">
       <span class="hero-info-item">Hannoversche Str. 20</span>
       <span class="hero-info-item">31275 Lehrte-Ahlten</span>
       <span class="hero-info-item">05132 824 41 35</span>
     </div>
-    <a href="#speisekarte" class="hero-cta">Unsere Speisekarte</a>
+    <a href="#speisekarte" class="hero-cta" data-i18n="hero.cta">Unsere Speisekarte</a>
   </div>
 </section>
 
 <!-- About -->
 <section id="about">
-  <div class="section-label reveal">Willkommen</div>
+  <div class="section-label reveal" data-i18n="about.label">Willkommen</div>
   <div class="about-grid">
     <div class="about-image-wrapper reveal">
       <img src="images/niko.webp" alt="Niko – Ihr Gastgeber" class="about-image">
       <div class="about-image-frame"></div>
-      <div class="about-image-caption">Niko – Ihr Gastgeber</div>
+      <div class="about-image-caption" data-i18n="about.caption">Niko – Ihr Gastgeber</div>
     </div>
     <div class="about-text reveal reveal-delay-1">
-      <h3>Griechische <em>Spezialitäten</em> in Ahlten</h3>
-      <p>Herzlich Willkommen bei Niko und Team. Wir verwöhnen unsere Gäste nicht nur mit leckeren griechischen Spezialitäten – bei uns erlebt man echte griechische Herzlichkeit und Gastfreundschaft.</p>
-      <p>Frisch vom Grill oder traditionell aus dem Ofen: Jedes Gericht wird mit Liebe und aus besten Zutaten zubereitet. Ob Gyros, Souvlaki, frische Salate oder überbackene Spezialitäten – bei uns schmeckt es wie im Urlaub.</p>
-      <p>Wir freuen uns auf Ihren Besuch – Niko und das gesamte Team heißen Sie herzlich willkommen!</p>
+      <h3 data-i18n-html="about.h3">Griechische <em>Spezialitäten</em> in Ahlten</h3>
+      <p data-i18n="about.p1">Herzlich Willkommen bei Niko und Team. Wir verwöhnen unsere Gäste nicht nur mit leckeren griechischen Spezialitäten – bei uns erlebt man echte griechische Herzlichkeit und Gastfreundschaft.</p>
+      <p data-i18n="about.p2">Frisch vom Grill oder traditionell aus dem Ofen: Jedes Gericht wird mit Liebe und aus besten Zutaten zubereitet. Ob Gyros, Souvlaki, frische Salate oder überbackene Spezialitäten – bei uns schmeckt es wie im Urlaub.</p>
+      <p data-i18n="about.p3">Wir freuen uns auf Ihren Besuch – Niko und das gesamte Team heißen Sie herzlich willkommen!</p>
       <div class="about-stats">
         <div class="about-stat">
           <strong>4.8</strong>
-          <span>Google Bewertung</span>
+          <span data-i18n="about.stat.rating">Google Bewertung</span>
         </div>
         <div class="about-stat">
           <strong>★★★★★</strong>
-          <span>Top bewertet</span>
+          <span data-i18n="about.stat.top">Top bewertet</span>
         </div>
         <div class="about-stat">
           <strong>♥</strong>
-          <span>Familienbetrieb</span>
+          <span data-i18n="about.stat.family">Familienbetrieb</span>
         </div>
       </div>
     </div>
@@ -101,9 +105,9 @@
 
 <!-- Menu -->
 <section id="speisekarte">
-  <div class="section-label reveal">Genuss</div>
-  <h2 class="section-title reveal">Unsere Speisekarte</h2>
-  <p class="section-subtitle reveal">Traditionelle griechische Küche, frisch zubereitet mit Liebe und besten Zutaten</p>
+  <div class="section-label reveal" data-i18n="menu.label">Genuss</div>
+  <h2 class="section-title reveal" data-i18n="menu.title">Unsere Speisekarte</h2>
+  <p class="section-subtitle reveal" data-i18n="menu.subtitle">Traditionelle griechische Küche, frisch zubereitet mit Liebe und besten Zutaten</p>
 
   <div class="menu-sections" id="menuSections">
     <!-- wird per fetch aus menu.json geladen -->
@@ -112,28 +116,28 @@
 
   <div class="allergen-wrapper reveal">
     <button class="allergen-toggle" id="allergenToggle" onclick="document.getElementById('allergenPanel').classList.toggle('open'); this.classList.toggle('open')">
-      <span>Allergene &amp; Zusatzstoffe</span>
+      <span data-i18n="menu.allergens.toggle">Allergene &amp; Zusatzstoffe</span>
       <span class="allergen-arrow">&#9663;</span>
     </button>
     <div class="allergen-panel" id="allergenPanel">
       <div class="allergen-grid">
-        <div class="allergen-item"><span class="allergen-key">¹</span> Mit Farbstoff</div>
-        <div class="allergen-item"><span class="allergen-key">²</span> Mit Konservierungsstoff</div>
-        <div class="allergen-item"><span class="allergen-key">³</span> Antioxidationsmittel</div>
-        <div class="allergen-item"><span class="allergen-key">⁴</span> Mit Geschmacksverstärker</div>
-        <div class="allergen-item"><span class="allergen-key">⁵</span> Mit Süßungsmittel</div>
-        <div class="allergen-item"><span class="allergen-key">⁶</span> Enthält eine Phenylalaninquelle</div>
-        <div class="allergen-item"><span class="allergen-key">⁷</span> Koffeinhaltig</div>
-        <div class="allergen-item"><span class="allergen-key">⁸</span> Chininhaltig</div>
-        <div class="allergen-item"><span class="allergen-key">⁹</span> Mit Ingwer-Auszug</div>
-        <div class="allergen-item"><span class="allergen-key">¹⁰</span> Sulfite</div>
-        <div class="allergen-item"><span class="allergen-key">¹¹</span> Lupinen</div>
-        <div class="allergen-item"><span class="allergen-key">ᴮ</span> Krebstiere</div>
-        <div class="allergen-item"><span class="allergen-key">ᶜ</span> Ei</div>
-        <div class="allergen-item"><span class="allergen-key">ᴰ</span> Fisch</div>
-        <div class="allergen-item"><span class="allergen-key">ᴳ</span> Milch (Sahne)</div>
-        <div class="allergen-item"><span class="allergen-key">ᴴ</span> Senf</div>
-        <div class="allergen-item"><span class="allergen-key">ᴷ</span> Hefe</div>
+        <div class="allergen-item"><span class="allergen-key">¹</span><span data-i18n="allergen.1"> Mit Farbstoff</span></div>
+        <div class="allergen-item"><span class="allergen-key">²</span><span data-i18n="allergen.2"> Mit Konservierungsstoff</span></div>
+        <div class="allergen-item"><span class="allergen-key">³</span><span data-i18n="allergen.3"> Antioxidationsmittel</span></div>
+        <div class="allergen-item"><span class="allergen-key">⁴</span><span data-i18n="allergen.4"> Mit Geschmacksverstärker</span></div>
+        <div class="allergen-item"><span class="allergen-key">⁵</span><span data-i18n="allergen.5"> Mit Süßungsmittel</span></div>
+        <div class="allergen-item"><span class="allergen-key">⁶</span><span data-i18n="allergen.6"> Enthält eine Phenylalaninquelle</span></div>
+        <div class="allergen-item"><span class="allergen-key">⁷</span><span data-i18n="allergen.7"> Koffeinhaltig</span></div>
+        <div class="allergen-item"><span class="allergen-key">⁸</span><span data-i18n="allergen.8"> Chininhaltig</span></div>
+        <div class="allergen-item"><span class="allergen-key">⁹</span><span data-i18n="allergen.9"> Mit Ingwer-Auszug</span></div>
+        <div class="allergen-item"><span class="allergen-key">¹⁰</span><span data-i18n="allergen.10"> Sulfite</span></div>
+        <div class="allergen-item"><span class="allergen-key">¹¹</span><span data-i18n="allergen.11"> Lupinen</span></div>
+        <div class="allergen-item"><span class="allergen-key">ᴮ</span><span data-i18n="allergen.B"> Krebstiere</span></div>
+        <div class="allergen-item"><span class="allergen-key">ᶜ</span><span data-i18n="allergen.C"> Ei</span></div>
+        <div class="allergen-item"><span class="allergen-key">ᴰ</span><span data-i18n="allergen.D"> Fisch</span></div>
+        <div class="allergen-item"><span class="allergen-key">ᴳ</span><span data-i18n="allergen.G"> Milch (Sahne)</span></div>
+        <div class="allergen-item"><span class="allergen-key">ᴴ</span><span data-i18n="allergen.H"> Senf</span></div>
+        <div class="allergen-item"><span class="allergen-key">ᴷ</span><span data-i18n="allergen.K"> Hefe</span></div>
       </div>
     </div>
   </div>
@@ -141,79 +145,79 @@
 
 <!-- Ambience -->
 <section id="ambiente">
-  <div class="section-label reveal">Atmosphäre</div>
-  <h2 class="section-title reveal">Unser Ambiente</h2>
-  <p class="section-subtitle reveal">Griechisches Flair mitten in Ahlten – gemütlich, herzlich, einladend</p>
+  <div class="section-label reveal" data-i18n="ambience.label">Atmosphäre</div>
+  <h2 class="section-title reveal" data-i18n="ambience.title">Unser Ambiente</h2>
+  <p class="section-subtitle reveal" data-i18n="ambience.subtitle">Griechisches Flair mitten in Ahlten – gemütlich, herzlich, einladend</p>
 
   <div class="ambience-gallery">
-    <div class="ambience-card reveal"><div class="ambience-card-emoji">🏺</div><div class="ambience-card-label">Gemütlicher<br>Gastraum</div></div>
-    <div class="ambience-card reveal"><div class="ambience-card-emoji">☀️</div><div class="ambience-card-label">Terrasse</div></div>
-    <div class="ambience-card reveal"><div class="ambience-card-emoji">🍷</div><div class="ambience-card-label">Griechische Weine</div></div>
-    <div class="ambience-card reveal"><div class="ambience-card-emoji">👨‍👩‍👧‍👦</div><div class="ambience-card-label">Familienfreundlich</div></div>
-    <div class="ambience-card reveal"><div class="ambience-card-emoji">🎉</div><div class="ambience-card-label">Feiern & Gruppen</div></div>
+    <div class="ambience-card reveal"><div class="ambience-card-emoji">🏺</div><div class="ambience-card-label" data-i18n-html="ambience.card1">Gemütlicher<br>Gastraum</div></div>
+    <div class="ambience-card reveal"><div class="ambience-card-emoji">☀️</div><div class="ambience-card-label" data-i18n="ambience.card2">Terrasse</div></div>
+    <div class="ambience-card reveal"><div class="ambience-card-emoji">🍷</div><div class="ambience-card-label" data-i18n="ambience.card3">Griechische Weine</div></div>
+    <div class="ambience-card reveal"><div class="ambience-card-emoji">👨‍👩‍👧‍👦</div><div class="ambience-card-label" data-i18n="ambience.card4">Familienfreundlich</div></div>
+    <div class="ambience-card reveal"><div class="ambience-card-emoji">🎉</div><div class="ambience-card-label" data-i18n="ambience.card5">Feiern &amp; Gruppen</div></div>
   </div>
 </section>
 
 <!-- Reviews -->
 <section id="bewertungen">
-  <div class="section-label reveal">Stimmen unserer Gäste</div>
-  <h2 class="section-title reveal">Bewertungen</h2>
+  <div class="section-label reveal" data-i18n="reviews.label">Stimmen unserer Gäste</div>
+  <h2 class="section-title reveal" data-i18n="reviews.title">Bewertungen</h2>
 
   <div class="review-rating-big reveal">
     <strong>4.8</strong>
-    <span>★★★★★ auf Google</span>
+    <span data-i18n="reviews.on.google">★★★★★ auf Google</span>
   </div>
 
   <div class="reviews-container">
     <div class="review-card reveal">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">Einfach immer wieder lecker. Der Service ist super und schnell. Nur zu empfehlen!</p>
-      <span class="review-author">Google Bewertung</span>
+      <p class="review-text" data-i18n="review.text1">Einfach immer wieder lecker. Der Service ist super und schnell. Nur zu empfehlen!</p>
+      <span class="review-author" data-i18n="review.author">Google Bewertung</span>
     </div>
     <div class="review-card reveal reveal-delay-1">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">Top Restaurant, sehr zu empfehlen. Griechische Gastfreundschaft vom Feinsten.</p>
-      <span class="review-author">Google Bewertung</span>
+      <p class="review-text" data-i18n="review.text2">Top Restaurant, sehr zu empfehlen. Griechische Gastfreundschaft vom Feinsten.</p>
+      <span class="review-author" data-i18n="review.author">Google Bewertung</span>
     </div>
     <div class="review-card reveal reveal-delay-2">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">Wunderbare Atmosphäre, freundliches Personal und das Essen war hervorragend. Wie ein kleiner Urlaub in Griechenland!</p>
-      <span class="review-author">Google Bewertung</span>
+      <p class="review-text" data-i18n="review.text3">Wunderbare Atmosphäre, freundliches Personal und das Essen war hervorragend. Wie ein kleiner Urlaub in Griechenland!</p>
+      <span class="review-author" data-i18n="review.author">Google Bewertung</span>
     </div>
   </div>
 </section>
 
 <!-- Contact -->
 <section id="kontakt">
-  <div class="section-label reveal">Besuchen Sie uns</div>
-  <h2 class="section-title reveal">Kontakt & Öffnungszeiten</h2>
+  <div class="section-label reveal" data-i18n="contact.label">Besuchen Sie uns</div>
+  <h2 class="section-title reveal" data-i18n-html="contact.title">Kontakt &amp; Öffnungszeiten</h2>
   <br><br>
 
   <div class="contact-grid">
     <div class="contact-details reveal">
       <div class="contact-item">
-        <h3>Adresse</h3>
+        <h3 data-i18n="contact.address.title">Adresse</h3>
         <p>Hannoversche Str. 20<br>31275 Lehrte (Ahlten)</p>
       </div>
       <div class="contact-item">
-        <h3>Telefon</h3>
+        <h3 data-i18n="contact.phone.title">Telefon</h3>
         <p><a href="tel:+4951328244135">05132 824 41 35</a></p>
-        <p class="contact-call-hint">Für Reservierungen und Bestellungen zum Abholen rufen Sie uns gerne an.</p>
+        <p class="contact-call-hint" data-i18n="contact.phone.hint">Für Reservierungen und Bestellungen zum Abholen rufen Sie uns gerne an.</p>
       </div>
       <div class="contact-item">
-        <h3>Öffnungszeiten</h3>
+        <h3 data-i18n="contact.hours.title">Öffnungszeiten</h3>
         <table class="hours-table">
-          <tr><td>Montag</td><td class="hours-closed">Ruhetag</td></tr>
-          <tr><td>Dienstag</td><td>17:00 – 22:00</td></tr>
-          <tr><td>Mittwoch</td><td>17:00 – 22:00</td></tr>
-          <tr><td>Donnerstag</td><td>17:00 – 22:00</td></tr>
-          <tr><td>Freitag</td><td>17:00 – 22:00</td></tr>
-          <tr><td>Samstag</td><td>17:00 – 22:00</td></tr>
-          <tr><td>Sonntag</td><td>12:00 – 15:00, 17:00 – 22:00</td></tr>
+          <tr><td data-i18n="day.mon">Montag</td><td class="hours-closed" data-i18n="hours.closed">Ruhetag</td></tr>
+          <tr><td data-i18n="day.tue">Dienstag</td><td>17:00 – 22:00</td></tr>
+          <tr><td data-i18n="day.wed">Mittwoch</td><td>17:00 – 22:00</td></tr>
+          <tr><td data-i18n="day.thu">Donnerstag</td><td>17:00 – 22:00</td></tr>
+          <tr><td data-i18n="day.fri">Freitag</td><td>17:00 – 22:00</td></tr>
+          <tr><td data-i18n="day.sat">Samstag</td><td>17:00 – 22:00</td></tr>
+          <tr><td data-i18n="day.sun">Sonntag</td><td>12:00 – 15:00, 17:00 – 22:00</td></tr>
         </table>
       </div>
       <div class="contact-item">
-        <h3>Folgen Sie uns</h3>
+        <h3 data-i18n="contact.follow.title">Folgen Sie uns</h3>
         <p><a href="https://www.facebook.com/BeiNikoAhlten/" target="_blank">Facebook – Bei Niko Ahlten</a></p>
       </div>
     </div>
@@ -221,12 +225,12 @@
     <div class="contact-map reveal reveal-delay-1">
       <div class="maps-consent-wrapper" id="mapsWrapper">
         <div class="maps-consent-overlay" id="mapsOverlay">
-          <p>Für die Anzeige der Karte wird Google Maps geladen. Dabei werden Daten an Google übertragen.</p>
+          <p data-i18n="maps.text">Für die Anzeige der Karte wird Google Maps geladen. Dabei werden Daten an Google übertragen.</p>
           <div class="maps-consent-buttons">
-            <button onclick="loadGoogleMaps()" class="btn-maps-consent">Karte laden</button>
-            <button onclick="denyGoogleMaps()" class="btn-maps-deny">Ablehnen</button>
+            <button onclick="loadGoogleMaps()" class="btn-maps-consent" data-i18n="maps.load">Karte laden</button>
+            <button onclick="denyGoogleMaps()" class="btn-maps-deny" data-i18n="maps.deny">Ablehnen</button>
           </div>
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="maps-privacy-link">Datenschutz von Google</a>
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="maps-privacy-link" data-i18n="maps.privacy">Datenschutz von Google</a>
         </div>
       </div>
     </div>
@@ -237,11 +241,11 @@
 <footer>
   <img src="images/logo.webp" alt="Bei Niko" class="footer-logo-img">
   <div class="footer-name">Bei Niko</div>
-  <div class="footer-tagline">Griechisches Restaurant in Ahlten</div>
+  <div class="footer-tagline" data-i18n="footer.tagline">Griechisches Restaurant in Ahlten</div>
   <div class="footer-links">
-    <a href="#about">Über uns</a>
-    <a href="#speisekarte">Speisekarte</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="#about" data-i18n="nav.about">Über uns</a>
+    <a href="#speisekarte" data-i18n="nav.menu">Speisekarte</a>
+    <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
     <a href="https://www.facebook.com/BeiNikoAhlten/" target="_blank">Facebook</a>
   </div>
     <div class="footer-legal-links">
