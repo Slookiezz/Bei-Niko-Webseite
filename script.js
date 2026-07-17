@@ -86,7 +86,9 @@ var translations = {
     'maps.revoke.title': 'Einwilligung widerrufen',
     'maps.revoke':       'Widerrufen',
     'maps.denied.text':  'Karte wurde abgelehnt.',
-    'maps.reset':        'Erneut entscheiden'
+    'maps.reset':        'Erneut entscheiden',
+
+    'banner.title':  'Betriebsferien'
   },
 
   en: {
@@ -175,7 +177,9 @@ var translations = {
     'maps.revoke.title': 'Revoke consent',
     'maps.revoke':       'Revoke',
     'maps.denied.text':  'Map was declined.',
-    'maps.reset':        'Change decision'
+    'maps.reset':        'Change decision',
+
+    'banner.title':  'Summer Closure'
   }
 };
 
@@ -290,6 +294,30 @@ document.querySelectorAll('.legal-overlay').forEach(function(overlay) {
   overlay.addEventListener('click', function(e) {
     if (e.target === this) closeLegal(this.id);
   });
+});
+
+// ─── Betriebsferien Banner ────────────────────────────────────────────────────
+var BANNER_KEY = 'banner_dismissed_2026_08';
+
+function closeBanner() {
+  document.getElementById('bannerOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+  sessionStorage.setItem(BANNER_KEY, 'true');
+}
+
+if (!sessionStorage.getItem(BANNER_KEY)) {
+  document.getElementById('bannerOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+document.getElementById('bannerOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeBanner();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && document.getElementById('bannerOverlay').classList.contains('active')) {
+    closeBanner();
+  }
 });
 
 // ─── Navbar scroll ────────────────────────────────────────────────────────────
