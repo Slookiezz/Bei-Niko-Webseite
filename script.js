@@ -297,6 +297,7 @@ document.querySelectorAll('.legal-overlay').forEach(function(overlay) {
 });
 
 // ─── Betriebsferien Banner ────────────────────────────────────────────────────
+var BANNER_ENABLED = true; // true = Banner aktiv, false = Banner deaktiviert
 var BANNER_KEY = 'banner_dismissed_2026_08';
 
 function closeBanner() {
@@ -305,7 +306,7 @@ function closeBanner() {
   sessionStorage.setItem(BANNER_KEY, 'true');
 }
 
-if (!sessionStorage.getItem(BANNER_KEY)) {
+if (BANNER_ENABLED && !sessionStorage.getItem(BANNER_KEY)) {
   document.getElementById('bannerOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
