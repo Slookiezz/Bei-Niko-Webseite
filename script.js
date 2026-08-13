@@ -297,7 +297,7 @@ document.querySelectorAll('.legal-overlay').forEach(function(overlay) {
 });
 
 // ─── Betriebsferien Banner ────────────────────────────────────────────────────
-var BANNER_ENABLED = true; // true = Banner aktiv, false = Banner deaktiviert
+var BANNER_ENABLED = false; // true = Banner aktiv, false = Banner deaktiviert
 var BANNER_KEY = 'banner_dismissed_2026_08';
 
 function closeBanner() {
@@ -320,6 +320,19 @@ document.addEventListener('keydown', function(e) {
     closeBanner();
   }
 });
+
+// ─── Wieder geöffnet Banner ───────────────────────────────────────────────────
+var REOPEN_BANNER_ENABLED = true; // true = Banner aktiv, false = Banner deaktiviert
+var REOPEN_BANNER_KEY = 'reopen_banner_dismissed_2026_08';
+
+function closeReopenBanner() {
+  document.getElementById('reopenBanner').classList.remove('active');
+  sessionStorage.setItem(REOPEN_BANNER_KEY, 'true');
+}
+
+if (REOPEN_BANNER_ENABLED && !sessionStorage.getItem(REOPEN_BANNER_KEY)) {
+  document.getElementById('reopenBanner').classList.add('active');
+}
 
 // ─── Navbar scroll ────────────────────────────────────────────────────────────
 window.addEventListener('scroll', function() {
