@@ -322,7 +322,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ─── Wieder geöffnet Banner ───────────────────────────────────────────────────
-var REOPEN_BANNER_ENABLED = true; // true = Banner aktiv, false = Banner deaktiviert
+var REOPEN_BANNER_ENABLED = false; // true = Banner aktiv, false = Banner deaktiviert
 var REOPEN_BANNER_KEY = 'reopen_banner_dismissed_2026_08';
 
 function closeReopenBanner() {
